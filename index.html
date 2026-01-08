@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadmap Gestión de la Innovación - CRPE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            /* PALETA CORPORATIVA CENS */
+            --cens-green: #006633;
+            --cens-light-green: #99CC33;
+            --cens-cyan: #009FE3;
+            --cens-dark-blue: #003854;
+            --cens-orange: #BA4818;
+            --cens-grey: #666666;
+            
+            --bg-main: #f4f6f8;
+            --text-dark: #333333;
+            
+            /* Estados Kanban */
+            --col-todo: #e0e0e0;
+            --col-doing: #d1fae5;
+            --col-done: #bbf7d0;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background-color: var(--bg-main); margin: 0; padding: 0; color: var(--text-dark);
+            display: flex; flex-direction: column; height: 100vh;
+        }
+
+        /* --- HEADER --- */
+        .admin-header {
+            background-color: var(--cens-green); color: white; padding: 0.8rem 2rem;
+            display: flex; justify-content: space-between; align-items: center; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-bottom: 4px solid var(--cens-light-green); flex-shrink: 0;
+        }
+        .header-title h1 { margin: 0; font-size: 1.5rem; font-weight: 700; }
+        .header-title h2 { margin: 0; font-size: 0.95rem; font-weight: 400; opacity: 0.95; }
+        .vigencia { 
+            font-size: 0.75rem; background: rgba(255,255,255,0.2); 
+            padding: 2px 8px; border-radius: 10px; margin-left: 10px; vertical-align: middle; 
+        }
+
+        .header-actions { display: flex; gap: 10px; }
+        
+        .btn {
+            border: none; padding: 8px 14px; border-radius: 6px; cursor: pointer; font-weight: 600; font-size: 0.85rem;
+            display: flex; align-items: center; gap: 6px; transition: all 0.2s; text-decoration: none; color: white;
+            background: rgba(255,255,255,0.2);
+        }
+        .btn:hover { background: rgba(255,255,255,0.3); }
+        .btn-primary { background: white; color: var(--cens-green); }
+        .btn-primary:hover { background: #f0fdf4; color: #004d26; }
+        .btn-danger { background: #ef4444; }
+        .btn-danger:hover { background: #dc2626; }
+
+        .btn-text { display: inline-block; }
+
+        /* --- KANBAN --- */
+        .board-container {
+            flex-grow: 1; padding: 25px; overflow-x: auto;
+            display: flex; gap: 25px; align-items: flex-start;
+        }
+
+        .kanban-column {
+            flex: 1; min-width: 320px; max-width: 400px;
+            background: #ffffff; border-radius: 8px; display: flex; flex-direction: column;
+            max-height: 100%; 
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05); border-top: 5px solid #ccc;
+        }
+        
+        .col-todo { border-top-color: var(--cens-grey); }
+        .col-doing { border-top-color: var(--cens-light-green); }
+        .col-done { border-top-color: var(--cens-green); }
+
+        .col-header {
+            padding: 15px; font-weight: 700; text-transform: uppercase; font-size: 0.9rem;
+            display: flex; justify-content: space-between; border-bottom: 1px solid #eee;
+        }
+        .col-body { padding: 15px; overflow-y: auto; flex-grow: 1; scrollbar-width: thin; background: #fafafa; }
+
+        /* --- TARJETAS --- */
+        .kanban-card {
+            background: white; border: 1px solid #e5e7eb; border-radius: 6px; border-left: 4px solid transparent;
+            padding: 12px; margin-bottom: 12px; box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+            position: relative; transition: transform 0.2s; cursor: pointer;
+        }
+        .kanban-card:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        
+        .card-cat-tag {
+            display: inline-block; padding: 2px 8px; border-radius: 4px;
+            font-size: 0.65rem; font-weight: 700; color: white; text-transform: uppercase; margin-bottom: 8px;
+        }
+        .card-title { font-weight: 600; font-size: 0.95rem; margin-bottom: 8px; line-height: 1.4; color: #111827; }
+        .card-meta {
+            display: flex; justify-content: space-between; align-items: flex-end;
+            font-size: 0.75rem; color: #6b7280; border-top: 1px dashed #e5e7eb; padding-top: 8px;
+        }
+        .card-actions { display: flex; gap: 4px; z-index: 5; }
+        .move-btn {
+            background: #f3f4f6; border: 1px solid #d1d5db; color: #6b7280;
+            width: 24px; height: 24px; border-radius: 4px; display: flex; align-items: center; justify-content: center;
+            cursor: pointer; transition: all 0.2s; font-size: 0.7rem;
+        }
+        .move-btn:hover { background: var(--cens-green); color: white; border-color: var(--cens-green); }
+
+        /* --- MODALES --- */
+        .modal-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.6); display: none; justify-content: center; align-items: center; z-index: 1000;
+        }
+        .modal-content {
+            background: white; padding: 2rem; border-radius: 8px; width: 600px; max-width: 90%;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2); max-height: 90vh; overflow-y: auto;
+        }
+        .modal-header { display: flex; justify-content: space-between; margin-bottom: 1.5rem; align-items: center; }
+        .modal-header h2 { margin: 0; color: var(--cens-green); }
+        
+        .form-group { margin-bottom: 1rem; }
+        .form-group label { display: block; margin-bottom: 0.5rem; font-weight: 600; font-size: 0.9rem; }
+        .form-control {
+            width: 100%; padding: 0.6rem; border: 1px solid #ccc; border-radius: 4px;
+            font-size: 0.95rem; box-sizing: border-box;
+        }
+        .btn-submit {
+            width: 100%; background: var(--cens-green); color: white; border: none;
+            padding: 0.8rem; border-radius: 4px; font-weight: bold; cursor: pointer; margin-top: 1rem;
+        }
+        .btn-submit:hover { background: #004d26; }
+
+        .recurrence-panel {
+            background: #f0fdf4; padding: 15px; border-radius: 6px; border: 1px solid #bbf7d0; display: none; margin-top: 10px;
+        }
+        .checkbox-grid {
+            display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; max-height: 150px; overflow-y: auto;
+        }
+        .check-item { font-size: 0.85rem; display: flex; align-items: center; gap: 5px; cursor: pointer; }
+        
+        .config-list { list-style: none; padding: 0; border: 1px solid #eee; border-radius: 4px; }
+        .config-item { padding: 8px; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; }
+        .btn-sm { padding: 2px 6px; font-size: 0.7rem; background: #fee2e2; color: #ef4444; border:none; cursor: pointer; }
+
+        /* --- ESTILOS REPORTE --- */
+        .report-section { margin-bottom: 30px; }
+        .report-title { 
+            font-size: 1rem; font-weight: 700; color: var(--cens-dark-blue); 
+            border-bottom: 2px solid #eee; padding-bottom: 5px; margin-bottom: 15px;
+        }
+        .report-grid { display: grid; grid-template-columns: 1fr; gap: 15px; }
+        .report-item { display: flex; align-items: center; justify-content: space-between; font-size: 0.9rem; }
+        .report-bar-bg { flex-grow: 1; height: 8px; background: #eee; border-radius: 4px; margin: 0 15px; }
+        .report-bar-fill { height: 100%; border-radius: 4px; transition: width 0.5s; }
+        .report-value { font-weight: 700; width: 40px; text-align: right; }
+        .report-label { width: 120px; font-weight: 600; color: #555; }
+
+    </style>
+</head>
+<body>
+
+    <header class="admin-header">
+        <div class="header-title">
+            <h1>Roadmap Gestión de la Innovación</h1>
+            <h2>Control y Reducción de Pérdidas de Energía <span class="vigencia">Vigencia 2026</span></h2>
+        </div>
+        <div class="header-actions">
+            <button class="btn btn-primary" onclick="openTaskModal()">
+                <i class="fas fa-plus"></i> <span class="btn-text">Nueva Tarea</span>
+            </button>
+            <button class="btn" onclick="openReportModal()" title="Ver Estadísticas">
+                <i class="fas fa-chart-pie"></i> <span class="btn-text">Reportes</span>
+            </button>
+            <button class="btn" onclick="downloadCSV()" title="Descargar Excel">
+                <i class="fas fa-file-download"></i> <span class="btn-text">Excel</span>
+            </button>
+            <button class="btn" onclick="openConfigModal()" title="Configuración">
+                <i class="fas fa-cog"></i> <span class="btn-text">Config</span>
+            </button>
+            <button class="btn btn-danger" onclick="safeReset()" title="Borrar Todo">
+                <i class="fas fa-trash"></i> <span class="btn-text">Reset</span>
+            </button>
+        </div>
+    </header>
+
+    <div class="board-container">
+        <div class="kanban-column col-todo">
+            <div class="col-header"><span><i class="far fa-circle"></i> Por Hacer</span> <span id="count-todo">0</span></div>
+            <div class="col-body" id="col-todo"></div>
+        </div>
+        <div class="kanban-column col-doing">
+            <div class="col-header"><span><i class="fas fa-spinner"></i> En Proceso</span> <span id="count-doing">0</span></div>
+            <div class="col-body" id="col-doing"></div>
+        </div>
+        <div class="kanban-column col-done">
+            <div class="col-header"><span><i class="fas fa-check-circle"></i> Terminado</span> <span id="count-done">0</span></div>
+            <div class="col-body" id="col-done"></div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="reportModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Tablero de Control</h2>
+                <span onclick="closeModal('reportModal')" style="cursor:pointer; font-size:1.5rem">&times;</span>
+            </div>
+            
+            <div class="report-section">
+                <div class="report-title"><i class="fas fa-layer-group"></i> 1. Avance por Categoría</div>
+                <div class="report-grid" id="catReportContainer">
+                    </div>
+            </div>
+
+            <div class="report-section">
+                <div class="report-title"><i class="far fa-calendar-check"></i> 2. Cumplimiento por Sprint</div>
+                <div class="report-grid" id="sprintReportContainer">
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="taskModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Nueva Tarea</h2>
+                <span onclick="closeModal('taskModal')" style="cursor:pointer; font-size:1.5rem">&times;</span>
+            </div>
+            
+            <input type="hidden" id="taskId">
+
+            <div class="form-group">
+                <label>Categoría</label>
+                <select id="taskCat" class="form-control"></select>
+            </div>
+            <div class="form-group">
+                <label>Actividad</label>
+                <input type="text" id="taskTitle" class="form-control" placeholder="Ej: Reunión de alineación">
+            </div>
+            <div class="form-group">
+                <label>Descripción</label>
+                <input type="text" id="taskTitle" class="form-control" placeholder="Ej: Reunión de alineación">
+            </div>
+            <div class="form-group">
+                <label>Responsable</label>
+                <input type="text" id="taskResp" class="form-control" value="Profesional Innovación">
+            </div>
+
+            <div class="form-group" id="simpleSprintGroup">
+                <label>Sprint</label>
+                <select id="taskSprint" class="form-control"></select>
+            </div>
+
+            <div class="form-group" style="margin-top:20px; border-top:1px solid #eee; padding-top:10px">
+                <label style="display:flex; align-items:center; gap:10px; cursor:pointer">
+                    <input type="checkbox" id="checkRecurrence" onchange="toggleRecurrence(this)"> 
+                    <i class="fas fa-sync-alt"></i> Activar Recurrencia / Multi-Sprint
+                </label>
+            </div>
+
+            <div class="recurrence-panel" id="recurrencePanel">
+                <div class="form-group">
+                    <label>Frecuencia (Copias por Sprint)</label>
+                    <select id="recFrequency" class="form-control">
+                        <option value="1">Única (1 vez por sprint)</option>
+                        <option value="2">Quincenal (2 veces por sprint)</option>
+                        <option value="4">Semanal (4 veces por sprint)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Seleccionar Sprints Destino:</label>
+                    <div class="checkbox-grid" id="sprintCheckboxes"></div>
+                </div>
+                <small style="color:#666">⚠ Esto creará múltiples tarjetas individuales.</small>
+            </div>
+
+            <button class="btn-submit" onclick="saveTask()">Guardar Tarea</button>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="configModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Configuración</h2>
+                <span onclick="closeModal('configModal')" style="cursor:pointer">&times;</span>
+            </div>
+            
+            <div style="display:flex; gap:20px; flex-wrap:wrap">
+                <div style="flex:1; min-width:200px">
+                    <h3>Sprints</h3>
+                    <div style="display:flex; gap:5px; margin-bottom:5px">
+                        <input id="newSprintInput" type="text" placeholder="Ej: Sprint 7" class="form-control">
+                        <button onclick="addConfigItem('sprints')" class="btn-primary" style="padding:5px 10px">+</button>
+                    </div>
+                    <ul id="configSprintsList" class="config-list"></ul>
+                </div>
+                <div style="flex:1; min-width:200px">
+                    <h3>Categorías</h3>
+                    <div style="display:flex; gap:5px; margin-bottom:5px">
+                        <input id="newCatInput" type="text" placeholder="Ej: Nueva Cat" class="form-control">
+                        <button onclick="addConfigItem('cats')" class="btn-primary" style="padding:5px 10px">+</button>
+                    </div>
+                    <ul id="configCatsList" class="config-list"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // === CONFIGURACIÓN ===
+        const STORAGE_KEY = 'cens_roadmap_v8_reports';
+        
+        const catColors = {
+            'Alineación': 'var(--cens-green)',
+            'Gestión Ágil': 'var(--cens-light-green)',
+            'Herramientas': 'var(--cens-cyan)',
+            'Estudios': 'var(--cens-dark-blue)',
+            'Vigilancia': 'var(--cens-orange)',
+            'Comunicación': 'var(--cens-grey)',
+            'General': '#999'
+        };
+
+        const defaultSprints = ['Sprint 1 (Ene)', 'Sprint 2 (Feb)', 'Sprint 3 (Mar)', 'Sprint 4 (Abr)', 'Sprint 5 (May)', 'Sprint 6 (Jun)', 'Q1-Q4 (Anual)'];
+        const defaultCats = Object.keys(catColors).filter(k => k !== 'General');
+
+        let data = { tasks: [], sprints: [...defaultSprints], cats: [...defaultCats] };
+
+        // === INICIO ===
+        document.addEventListener('DOMContentLoaded', () => {
+            try {
+                loadData();
+                renderBoard();
+            } catch (e) {
+                console.error("Error crítico:", e);
+                localStorage.removeItem(STORAGE_KEY);
+                location.reload();
+            }
+        });
+
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal-overlay')) {
+                event.target.style.display = "none";
+            }
+        }
+
+        function loadData() {
+            try {
+                const stored = localStorage.getItem(STORAGE_KEY);
+                if (stored) {
+                    data = JSON.parse(stored);
+                    if (!Array.isArray(data.tasks)) throw new Error("Datos corruptos");
+                    if (!data.sprints) data.sprints = [...defaultSprints];
+                    if (!data.cats) data.cats = [...defaultCats];
+                } else {
+                    initDefaultTasks();
+                    saveData();
+                }
+            } catch (error) {
+                console.warn("Error leyendo datos, usando temporales.");
+                initDefaultTasks();
+            }
+        }
+
+        function saveData() {
+            try {
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+                renderBoard();
+            } catch (e) {
+                renderBoard();
+            }
+        }
+
+        function initDefaultTasks() {
+            data.tasks = [
+                { id: 1, status: 'todo', cat: 'Comunicación', title: 'Informe ejecutivo de avances Q1', resp: 'Prof. Innovación', sprint: 'Sprint 1 (Ene)' },
+                { id: 2, status: 'doing', cat: 'Alineación', title: 'Sesiones con líder control pérdidas', resp: 'Prof. Innovación', sprint: 'Sprint 1 (Ene)' }
+            ];
+        }
+
+        // === RENDERIZADO TABLERO ===
+        function renderBoard() {
+            ['todo', 'doing', 'done'].forEach(s => {
+                const col = document.getElementById(`col-${s}`);
+                if(col) col.innerHTML = '';
+                const count = document.getElementById(`count-${s}`);
+                if(count) count.innerText = 0;
+            });
+
+            const counts = { todo: 0, doing: 0, done: 0 };
+            
+            if(Array.isArray(data.tasks)) {
+                data.tasks.forEach(task => {
+                    if(!counts.hasOwnProperty(task.status)) task.status = 'todo';
+                    counts[task.status]++;
+                    const card = createCardHTML(task);
+                    document.getElementById(`col-${task.status}`).insertAdjacentHTML('beforeend', card);
+                });
+            }
+
+            Object.keys(counts).forEach(k => {
+                const el = document.getElementById(`count-${k}`);
+                if(el) el.innerText = counts[k];
+            });
+        }
+
+        function createCardHTML(task) {
+            const color = catColors[task.cat] || '#999';
+            const prevBtn = task.status !== 'todo' ? 
+                `<button class="move-btn" onclick="moveTask('${task.id}', -1); event.stopPropagation();"><i class="fas fa-arrow-left"></i></button>` : '';
+            const nextBtn = task.status !== 'done' ? 
+                `<button class="move-btn" onclick="moveTask('${task.id}', 1); event.stopPropagation();"><i class="fas fa-arrow-right"></i></button>` : '';
+
+            return `
+            <div class="kanban-card" onclick="openTaskModal('${task.id}')" style="border-left-color: ${color}">
+                <span class="card-cat-tag" style="background-color: ${color}">${task.cat}</span>
+                <div class="card-title">${task.title}</div>
+                <div class="card-meta">
+                    <div><i class="far fa-user"></i> ${task.resp}</div>
+                    <div><i class="far fa-calendar"></i> ${task.sprint}</div>
+                </div>
+                <div class="card-actions" style="margin-top:8px; justify-content:flex-end">
+                    ${prevBtn} ${nextBtn}
+                </div>
+            </div>`;
+        }
+
+        // === LOGICA REPORTES ===
+        function openReportModal() {
+            const catContainer = document.getElementById('catReportContainer');
+            const sprintContainer = document.getElementById('sprintReportContainer');
+            catContainer.innerHTML = '';
+            sprintContainer.innerHTML = '';
+
+            // 1. Calcular Stats por Categoría
+            const catStats = {};
+            data.cats.forEach(c => catStats[c] = { total: 0, done: 0 });
+            
+            // 2. Calcular Stats por Sprint
+            const sprintStats = {};
+            data.sprints.forEach(s => sprintStats[s] = { total: 0, done: 0 });
+
+            // Llenar datos
+            data.tasks.forEach(t => {
+                // Categoría
+                if(!catStats[t.cat]) catStats[t.cat] = { total: 0, done: 0 };
+                catStats[t.cat].total++;
+                if(t.status === 'done') catStats[t.cat].done++;
+
+                // Sprint
+                if(!sprintStats[t.sprint]) sprintStats[t.sprint] = { total: 0, done: 0 };
+                sprintStats[t.sprint].total++;
+                if(t.status === 'done') sprintStats[t.sprint].done++;
+            });
+
+            // Render Categoría
+            Object.keys(catStats).forEach(cat => {
+                const s = catStats[cat];
+                if(s.total === 0) return;
+                const pct = Math.round((s.done / s.total) * 100);
+                const color = catColors[cat] || '#999';
+                
+                catContainer.innerHTML += `
+                    <div class="report-item">
+                        <span class="report-label" style="color:${color}">${cat}</span>
+                        <div class="report-bar-bg">
+                            <div class="report-bar-fill" style="width:${pct}%; background:${color}"></div>
+                        </div>
+                        <span class="report-value">${pct}%</span>
+                    </div>`;
+            });
+
+            // Render Sprints
+            Object.keys(sprintStats).forEach(sprint => {
+                const s = sprintStats[sprint];
+                if(s.total === 0) return;
+                const pct = Math.round((s.done / s.total) * 100);
+                const color = pct === 100 ? 'var(--cens-green)' : 'var(--cens-dark-blue)';
+                
+                sprintContainer.innerHTML += `
+                    <div class="report-item">
+                        <span class="report-label" style="width:150px">${sprint}</span>
+                        <div class="report-bar-bg">
+                            <div class="report-bar-fill" style="width:${pct}%; background:${color}"></div>
+                        </div>
+                        <span class="report-value">${pct}%</span>
+                    </div>`;
+            });
+
+            document.getElementById('reportModal').style.display = 'flex';
+        }
+
+        // === FUNCIONES TAREAS ===
+        function openTaskModal(taskId = null) {
+            const sprintSel = document.getElementById('taskSprint');
+            const catSel = document.getElementById('taskCat');
+            const sprintChecks = document.getElementById('sprintCheckboxes');
+            
+            sprintSel.innerHTML = data.sprints.map(s => `<option value="${s}">${s}</option>`).join('');
+            catSel.innerHTML = data.cats.map(c => `<option value="${c}">${c}</option>`).join('');
+            sprintChecks.innerHTML = data.sprints.map(s => `
+                <label class="check-item"><input type="checkbox" value="${s}" class="rec-sprint-check"> ${s}</label>
+            `).join('');
+
+            document.getElementById('taskId').value = '';
+            document.getElementById('taskTitle').value = '';
+            document.getElementById('taskResp').value = 'Profesional Innovación';
+            document.getElementById('checkRecurrence').checked = false;
+            toggleRecurrence(document.getElementById('checkRecurrence'));
+
+            if (taskId && taskId !== 'undefined') {
+                const task = data.tasks.find(t => String(t.id) === String(taskId));
+                if(task) {
+                    document.getElementById('modalTitle').innerText = 'Editar Tarea';
+                    document.getElementById('taskId').value = task.id;
+                    document.getElementById('taskCat').value = task.cat;
+                    document.getElementById('taskTitle').value = task.title;
+                    document.getElementById('taskResp').value = task.resp;
+                    document.getElementById('taskSprint').value = task.sprint;
+                    document.getElementById('checkRecurrence').parentElement.style.display = 'none';
+                }
+            } else {
+                document.getElementById('modalTitle').innerText = 'Nueva Tarea';
+                document.getElementById('checkRecurrence').parentElement.style.display = 'flex';
+            }
+            document.getElementById('taskModal').style.display = 'flex';
+        }
+
+        function saveTask() {
+            const id = document.getElementById('taskId').value;
+            const title = document.getElementById('taskTitle').value;
+            const cat = document.getElementById('taskCat').value;
+            const resp = document.getElementById('taskResp').value;
+            const isRecurrent = document.getElementById('checkRecurrence').checked;
+
+            if(!title) return alert("Por favor escribe el nombre de la actividad.");
+
+            if(id) {
+                const task = data.tasks.find(t => String(t.id) === String(id));
+                if(task) {
+                    task.title = title;
+                    task.cat = cat;
+                    task.resp = resp;
+                    task.sprint = document.getElementById('taskSprint').value;
+                }
+            } else {
+                if (isRecurrent) {
+                    const frequency = parseInt(document.getElementById('recFrequency').value);
+                    const checkboxes = document.querySelectorAll('.rec-sprint-check:checked');
+                    if(checkboxes.length === 0) return alert("Selecciona al menos un sprint.");
+                    checkboxes.forEach(chk => {
+                        const sprintName = chk.value;
+                        for(let i=1; i<=frequency; i++) {
+                            let suffix = frequency > 1 ? ` (${i})` : '';
+                            data.tasks.push({
+                                id: Date.now() + Math.random(),
+                                status: 'todo',
+                                cat, resp, sprint: sprintName,
+                                title: title + suffix
+                            });
+                        }
+                    });
+                } else {
+                    data.tasks.push({ id: Date.now(), status: 'todo', cat, resp, title, sprint: document.getElementById('taskSprint').value });
+                }
+            }
+            saveData();
+            closeModal('taskModal');
+        }
+
+        function moveTask(id, dir) {
+            const task = data.tasks.find(t => String(t.id) === String(id));
+            if(task) {
+                const flow = ['todo', 'doing', 'done'];
+                const idx = flow.indexOf(task.status);
+                const nextIdx = idx + dir;
+                if(nextIdx >= 0 && nextIdx < flow.length) {
+                    task.status = flow[nextIdx];
+                    saveData();
+                }
+            }
+        }
+
+        // === UTILS ===
+        function toggleRecurrence(checkbox) {
+            const panel = document.getElementById('recurrencePanel');
+            const simpleGroup = document.getElementById('simpleSprintGroup');
+            if(checkbox.checked) {
+                panel.style.display = 'block';
+                simpleGroup.style.display = 'none';
+            } else {
+                panel.style.display = 'none';
+                simpleGroup.style.display = 'block';
+            }
+        }
+        function closeModal(id) { document.getElementById(id).style.display = 'none'; }
+        
+        function openConfigModal() {
+            updateConfigLists();
+            document.getElementById('configModal').style.display = 'flex';
+        }
+        function updateConfigLists() {
+            const render = (arr, id, type) => {
+                document.getElementById(id).innerHTML = arr.map((item, i) => `
+                    <li class="config-item">${item} <button class="btn-sm" onclick="removeItem('${type}', ${i})">X</button></li>
+                `).join('');
+            };
+            render(data.sprints, 'configSprintsList', 'sprints');
+            render(data.cats, 'configCatsList', 'cats');
+        }
+        function addConfigItem(type) {
+            const val = document.getElementById(type === 'sprints' ? 'newSprintInput' : 'newCatInput').value;
+            if(val) {
+                data[type].push(val);
+                document.getElementById(type === 'sprints' ? 'newSprintInput' : 'newCatInput').value = '';
+                updateConfigLists();
+                saveData();
+            }
+        }
+        function removeItem(type, index) {
+            if(confirm("¿Eliminar?")) {
+                data[type].splice(index, 1);
+                updateConfigLists();
+                saveData();
+            }
+        }
+        function safeReset() {
+            if (prompt("PELIGRO: Esto borrará todas las tareas.\nEscribe: BORRAR") === "BORRAR") {
+                localStorage.removeItem(STORAGE_KEY);
+                location.reload();
+            }
+        }
+        function downloadCSV() {
+            let csvContent = "\uFEFFID;Estado;Categoría;Tarea;Responsable;Sprint\n";
+            data.tasks.forEach(t => {
+                csvContent += `${t.id};${t.status};${t.cat};"${t.title.replace(/(\r\n|\n|\r)/gm, " ")}";${t.resp};${t.sprint}\n`;
+            });
+            const link = document.createElement("a");
+            link.href = URL.createObjectURL(new Blob([csvContent], { type: 'text/csv;charset=utf-8;' }));
+            link.download = "reporte_cens_2026.csv";
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
+</body>
+</html>
