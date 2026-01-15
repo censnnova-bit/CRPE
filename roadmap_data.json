@@ -1,12 +1,436 @@
 {
   "tasks": [
     {
-      "id": 1,
+      "id": 1767900269450,
+      "status": "doing",
+      "cat": "Alineación",
+      "title": "Sesión con gestora de comunicaciones CRPE",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 1 (Ene)"
+    },
+    {
+      "id": 1767900269451,
+      "status": "doing",
+      "cat": "Alineación",
+      "title": "Sesión con líder control pérdidas",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 1 (Ene)"
+    },
+    {
+      "id": 1767900269452,
+      "status": "doing",
+      "cat": "Alineación",
+      "title": "Sesión con gestores sociales CRPE",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 1 (Ene)"
+    },
+    {
+      "id": 1767900269453,
+      "status": "doing",
+      "cat": "Comunicación",
+      "title": "Boletines internos sobre avances CRPE",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 1 (Ene)"
+    },
+    {
+      "id": 1767900269454,
+      "status": "done",
+      "cat": "Gestión Ágil",
+      "title": "Ceremonia de seguimiento de proyectos - TG (1)",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 1 (Ene)"
+    },
+    {
+      "id": 1767900269455,
+      "status": "done",
+      "cat": "Gestión Ágil",
+      "title": "Ceremonia de seguimiento de proyectos - TG (2)",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 1 (Ene)"
+    },
+    {
+      "id": 1767900269456,
+      "status": "todo",
+      "cat": "Gestión Ágil",
+      "title": "Ceremonia de seguimiento de proyectos - TG (3)",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 1 (Ene)"
+    },
+    {
+      "id": 1767900269457,
+      "status": "todo",
+      "cat": "Gestión Ágil",
+      "title": "Ceremonia de seguimiento de proyectos - TG (4)",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 1 (Ene)"
+    },
+    {
+      "id": 1767900269458,
+      "status": "done",
+      "cat": "Gestión Ágil",
+      "title": "Ceremonia de seguimiento de proyectos SafeGRID (1)",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 1 (Ene)"
+    },
+    {
+      "id": 1767900269459,
+      "status": "doing",
+      "cat": "Gestión Ágil",
+      "title": "Ceremonia de seguimiento de proyectos SafeGRID (2)",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 1 (Ene)"
+    },
+    {
+      "id": 1767900269460,
+      "status": "todo",
+      "cat": "Gestión Ágil",
+      "title": "Ceremonia de seguimiento de proyectos SafeGRID (3)",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 1 (Ene)"
+    },
+    {
+      "id": 1767900269461,
+      "status": "todo",
+      "cat": "Gestión Ágil",
+      "title": "Ceremonia de seguimiento de proyectos SafeGRID (4)",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 1 (Ene)"
+    },
+    {
+      "id": 1767900269462,
+      "status": "done",
+      "cat": "Gestión Ágil",
+      "title": "Revisión backlog prototipos (materiales, transformadores, liquidaciones) (1)",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 1 (Ene)"
+    },
+    {
+      "id": 1767900269463,
+      "status": "doing",
+      "cat": "Gestión Ágil",
+      "title": "Revisión backlog prototipos (materiales, transformadores, liquidaciones) (2)",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 1 (Ene)"
+    },
+    {
+      "id": 1767900269464,
+      "status": "doing",
+      "cat": "Herramientas",
+      "title": "Testeo prototipos (materiales, transformadores, liquidaciones) (1)",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 1 (Ene)"
+    },
+    {
+      "id": 1767900269465,
+      "status": "todo",
+      "cat": "Herramientas",
+      "title": "Testeo prototipos (materiales, transformadores, liquidaciones) (2)",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 1 (Ene)"
+    },
+    {
+      "id": 1767900269466,
+      "status": "todo",
+      "cat": "Alineación",
+      "title": "Sesión grupal con metodologías para alinear expectativas y tener feedback de valor",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 2 (Feb)"
+    },
+    {
+      "id": 1767900269467,
       "status": "todo",
       "cat": "Comunicación",
-      "title": "Ejemplo: Cargar archivo de OneDrive",
-      "resp": "Tú",
-      "sprint": "Sprint 1 (Ene)"
+      "title": "Boletines internos sobre avances CRPE",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 2 (Feb)"
+    },
+    {
+      "id": 1767900269468,
+      "status": "todo",
+      "cat": "Estudios",
+      "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (1)",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 2 (Feb)"
+    },
+    {
+      "id": 1767900269469,
+      "status": "todo",
+      "cat": "Estudios",
+      "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (2)",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 2 (Feb)"
+    },
+    {
+      "id": 1767900269470,
+      "status": "todo",
+      "cat": "Estudios",
+      "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (3)",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 2 (Feb)"
+    },
+    {
+      "id": 1767900269471,
+      "status": "todo",
+      "cat": "Estudios",
+      "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (4)",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 2 (Feb)"
+    },
+    {
+      "id": 1767900269472,
+      "status": "todo",
+      "cat": "Gestión Ágil",
+      "title": "Ceremonia de seguimiento de proyectos SafeGRID (1)",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 2 (Feb)"
+    },
+    {
+      "id": 1767900269473,
+      "status": "todo",
+      "cat": "Gestión Ágil",
+      "title": "Ceremonia de seguimiento de proyectos SafeGRID (2)",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 2 (Feb)"
+    },
+    {
+      "id": 1767900269474,
+      "status": "todo",
+      "cat": "Gestión Ágil",
+      "title": "Ceremonia de seguimiento de proyectos SafeGRID (3)",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 2 (Feb)"
+    },
+    {
+      "id": 1767900269475,
+      "status": "todo",
+      "cat": "Gestión Ágil",
+      "title": "Ceremonia de seguimiento de proyectos SafeGRID (4)",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 2 (Feb)"
+    },
+    {
+      "id": 1767900269476,
+      "status": "todo",
+      "cat": "Herramientas",
+      "title": "Testeo prototipos (materiales, transformadores, liquidaciones) (1)",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 2 (Feb)"
+    },
+    {
+      "id": 1767900269477,
+      "status": "todo",
+      "cat": "Herramientas",
+      "title": "Testeo prototipos (materiales, transformadores, liquidaciones) (2)",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 2 (Feb)"
+    },
+    {
+      "id": 1767900269478,
+      "status": "todo",
+      "cat": "Vigilancia",
+      "title": "Vigilancia tecnológica - CRPE",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 2 (Feb)"
+    },
+    {
+      "id": 1767900269479,
+      "status": "todo",
+      "cat": "Comunicación",
+      "title": "Boletines internos sobre avances CRPE",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 3 (Mar)"
+    },
+    {
+      "id": 1767900269480,
+      "status": "todo",
+      "cat": "Comunicación",
+      "title": "Informe de avances trimestal",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 3 (Mar)"
+    },
+    {
+      "id": 1767900269481,
+      "status": "todo",
+      "cat": "Estudios",
+      "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (1)",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 3 (Mar)"
+    },
+    {
+      "id": 1767900269482,
+      "status": "todo",
+      "cat": "Estudios",
+      "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (2)",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 3 (Mar)"
+    },
+    {
+      "id": 1767900269483,
+      "status": "todo",
+      "cat": "Estudios",
+      "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (3)",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 3 (Mar)"
+    },
+    {
+      "id": 1767900269484,
+      "status": "todo",
+      "cat": "Estudios",
+      "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (4)",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 3 (Mar)"
+    },
+    {
+      "id": 1767900269485,
+      "status": "todo",
+      "cat": "Gestión Ágil",
+      "title": "Ceremonia de seguimiento de proyectos SafeGRID (1)",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 3 (Mar)"
+    },
+    {
+      "id": 1767900269486,
+      "status": "todo",
+      "cat": "Gestión Ágil",
+      "title": "Ceremonia de seguimiento de proyectos SafeGRID (2)",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 3 (Mar)"
+    },
+    {
+      "id": 1767900269487,
+      "status": "todo",
+      "cat": "Gestión Ágil",
+      "title": "Ceremonia de seguimiento de proyectos SafeGRID (3)",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 3 (Mar)"
+    },
+    {
+      "id": 1767900269488,
+      "status": "todo",
+      "cat": "Gestión Ágil",
+      "title": "Ceremonia de seguimiento de proyectos SafeGRID (4)",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 3 (Mar)"
+    },
+    {
+      "id": 1767900269489,
+      "status": "todo",
+      "cat": "Vigilancia",
+      "title": "Vigilancia tecnológica - CRPE",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 3 (Mar)"
+    },
+    {
+      "id": 1767900269490,
+      "status": "todo",
+      "cat": "Comunicación",
+      "title": "Boletines internos sobre avances CRPE",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 4 (Abr)"
+    },
+    {
+      "id": 1767900269491,
+      "status": "todo",
+      "cat": "Gestión Ágil",
+      "title": "Ceremonia de seguimiento de proyectos SafeGRID (1)",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 4 (Abr)"
+    },
+    {
+      "id": 1767900269492,
+      "status": "todo",
+      "cat": "Gestión Ágil",
+      "title": "Ceremonia de seguimiento de proyectos SafeGRID (2)",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 4 (Abr)"
+    },
+    {
+      "id": 1767900269493,
+      "status": "todo",
+      "cat": "Gestión Ágil",
+      "title": "Ceremonia de seguimiento de proyectos SafeGRID (3)",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 4 (Abr)"
+    },
+    {
+      "id": 1767900269494,
+      "status": "todo",
+      "cat": "Gestión Ágil",
+      "title": "Ceremonia de seguimiento de proyectos SafeGRID (4)",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 4 (Abr)"
+    },
+    {
+      "id": 1767900269495,
+      "status": "todo",
+      "cat": "Herramientas",
+      "title": "Construcción de agente de IA normativo y de CRPE (para consultas)",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 4 (Abr)"
+    },
+    {
+      "id": 1767900269496,
+      "status": "todo",
+      "cat": "Vigilancia",
+      "title": "Vigilancia tecnológica - CRPE",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 4 (Abr)"
+    },
+    {
+      "id": 1767900269497,
+      "status": "todo",
+      "cat": "Comunicación",
+      "title": "Boletines internos sobre avances CRPE",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 5 (May)"
+    },
+    {
+      "id": 1767900269498,
+      "status": "todo",
+      "cat": "Estudios",
+      "title": "Análisis estado CRPE en Colombia",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 5 (May)"
+    },
+    {
+      "id": 1767900269499,
+      "status": "todo",
+      "cat": "Vigilancia",
+      "title": "Vigilancia tecnológica - CRPE",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 5 (May)"
+    },
+    {
+      "id": 1767900269500,
+      "status": "todo",
+      "cat": "Comunicación",
+      "title": "Boletines internos sobre avances CRPE",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 6 (Jun)"
+    },
+    {
+      "id": 1767900269501,
+      "status": "todo",
+      "cat": "Comunicación",
+      "title": "Informe de avances trimestal",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 6 (Jun)"
+    },
+    {
+      "id": 1767900269502,
+      "status": "todo",
+      "cat": "Estudios",
+      "title": "Análisis estado CRPE en Colombia",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 6 (Jun)"
+    },
+    {
+      "id": 1767900269503,
+      "status": "todo",
+      "cat": "Vigilancia",
+      "title": "Vigilancia tecnológica - CRPE",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 6 (Jun)"
     }
   ],
   "sprints": [
@@ -15,15 +439,14 @@
     "Sprint 3 (Mar)",
     "Sprint 4 (Abr)",
     "Sprint 5 (May)",
-    "Sprint 6 (Jun)",
-    "Q1-Q4 (Anual)"
+    "Sprint 6 (Jun)"
   ],
   "cats": [
     "Alineación",
+    "Comunicación",
+    "Estudios",
     "Gestión Ágil",
     "Herramientas",
-    "Estudios",
-    "Vigilancia",
-    "Comunicación"
+    "Vigilancia"
   ]
 }
