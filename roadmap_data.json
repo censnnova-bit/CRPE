@@ -1,0 +1,29 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "status": "todo",
+      "cat": "Comunicación",
+      "title": "Ejemplo: Cargar archivo de OneDrive",
+      "resp": "Tú",
+      "sprint": "Sprint 1 (Ene)"
+    }
+  ],
+  "sprints": [
+    "Sprint 1 (Ene)",
+    "Sprint 2 (Feb)",
+    "Sprint 3 (Mar)",
+    "Sprint 4 (Abr)",
+    "Sprint 5 (May)",
+    "Sprint 6 (Jun)",
+    "Q1-Q4 (Anual)"
+  ],
+  "cats": [
+    "Alineación",
+    "Gestión Ágil",
+    "Herramientas",
+    "Estudios",
+    "Vigilancia",
+    "Comunicación"
+  ]
+}
