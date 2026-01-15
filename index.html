@@ -43,20 +43,25 @@
             padding: 2px 8px; border-radius: 10px; margin-left: 10px; vertical-align: middle; 
         }
 
-        .header-actions { display: flex; gap: 10px; }
+        .header-actions { display: flex; gap: 8px; }
         
         .btn {
-            border: none; padding: 8px 14px; border-radius: 6px; cursor: pointer; font-weight: 600; font-size: 0.85rem;
+            border: none; padding: 8px 12px; border-radius: 6px; cursor: pointer; font-weight: 600; font-size: 0.8rem;
             display: flex; align-items: center; gap: 6px; transition: all 0.2s; text-decoration: none; color: white;
-            background: rgba(255,255,255,0.2);
+            background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.1);
         }
-        .btn:hover { background: rgba(255,255,255,0.3); }
+        .btn:hover { background: rgba(255,255,255,0.3); transform: translateY(-1px); }
         .btn-primary { background: white; color: var(--cens-green); }
         .btn-primary:hover { background: #f0fdf4; color: #004d26; }
         .btn-danger { background: #ef4444; }
         .btn-danger:hover { background: #dc2626; }
+        .btn-warning { background: var(--cens-orange); } 
+        .btn-warning:hover { background: #a33b12; }
 
         .btn-text { display: inline-block; }
+        
+        /* Input file oculto */
+        #fileInput { display: none; }
 
         /* --- KANBAN --- */
         .board-container {
@@ -165,20 +170,34 @@
             <h2>Control y Reducción de Pérdidas de Energía <span class="vigencia">Vigencia 2026</span></h2>
         </div>
         <div class="header-actions">
-            <button class="btn btn-primary" onclick="openTaskModal()">
-                <i class="fas fa-plus"></i> <span class="btn-text">Nueva Tarea</span>
+            <button class="btn" style="background-color: #24292e; color: white;" onclick="openCloudModal()" title="Sincronizar con GitHub">
+                <i class="fab fa-github"></i> <span class="btn-text">Nube</span>
+            </button>
+            <div style="width: 1px; height: 24px; background: rgba(255,255,255,0.3); margin: 0 5px;"></div>
+
+            <input type="file" id="fileInput" accept=".json" onchange="loadFromFile(this)">
+
+            <button class="btn btn-warning" onclick="triggerFileInput()" title="Cargar archivo JSON guardado">
+                <i class="fas fa-upload"></i> <span class="btn-text">Cargar Local</span>
+            </button>
+            <button class="btn btn-primary" onclick="downloadBackup()" title="Guardar cambios en mi PC">
+                <i class="fas fa-save"></i> <span class="btn-text">Guardar PC</span>
+            </button>
+
+            <button class="btn" onclick="openTaskModal()" title="Crear Tarea">
+                <i class="fas fa-plus"></i> 
             </button>
             <button class="btn" onclick="openReportModal()" title="Ver Estadísticas">
-                <i class="fas fa-chart-pie"></i> <span class="btn-text">Reportes</span>
+                <i class="fas fa-chart-pie"></i> 
             </button>
             <button class="btn" onclick="downloadCSV()" title="Descargar Excel">
-                <i class="fas fa-file-download"></i> <span class="btn-text">Excel</span>
+                <i class="fas fa-file-excel"></i> 
             </button>
             <button class="btn" onclick="openConfigModal()" title="Configuración">
-                <i class="fas fa-cog"></i> <span class="btn-text">Config</span>
+                <i class="fas fa-cog"></i> 
             </button>
             <button class="btn btn-danger" onclick="safeReset()" title="Borrar Todo">
-                <i class="fas fa-trash"></i> <span class="btn-text">Reset</span>
+                <i class="fas fa-trash"></i> 
             </button>
         </div>
     </header>
@@ -204,17 +223,13 @@
                 <h2>Tablero de Control</h2>
                 <span onclick="closeModal('reportModal')" style="cursor:pointer; font-size:1.5rem">&times;</span>
             </div>
-            
             <div class="report-section">
                 <div class="report-title"><i class="fas fa-layer-group"></i> 1. Avance por Categoría</div>
-                <div class="report-grid" id="catReportContainer">
-                    </div>
+                <div class="report-grid" id="catReportContainer"></div>
             </div>
-
             <div class="report-section">
                 <div class="report-title"><i class="far fa-calendar-check"></i> 2. Cumplimiento por Sprint</div>
-                <div class="report-grid" id="sprintReportContainer">
-                    </div>
+                <div class="report-grid" id="sprintReportContainer"></div>
             </div>
         </div>
     </div>
@@ -225,89 +240,70 @@
                 <h2 id="modalTitle">Nueva Tarea</h2>
                 <span onclick="closeModal('taskModal')" style="cursor:pointer; font-size:1.5rem">&times;</span>
             </div>
-            
             <input type="hidden" id="taskId">
-
-            <div class="form-group">
-                <label>Categoría</label>
-                <select id="taskCat" class="form-control"></select>
-            </div>
-            <div class="form-group">
-                <label>Actividad</label>
-                <input type="text" id="taskTitle" class="form-control" placeholder="Ej: Reunión de alineación">
-            </div>
-            <div class="form-group">
-                <label>Descripción</label>
-                <input type="text" id="taskTitle" class="form-control" placeholder="Ej: Reunión de alineación">
-            </div>
-            <div class="form-group">
-                <label>Responsable</label>
-                <input type="text" id="taskResp" class="form-control" value="Profesional Innovación">
-            </div>
-
-            <div class="form-group" id="simpleSprintGroup">
-                <label>Sprint</label>
-                <select id="taskSprint" class="form-control"></select>
-            </div>
-
+            <div class="form-group"><label>Categoría</label><select id="taskCat" class="form-control"></select></div>
+            <div class="form-group"><label>Actividad / Descripción</label><input type="text" id="taskTitle" class="form-control" placeholder="Ej: Reunión de alineación"></div>
+            <div class="form-group"><label>Responsable</label><input type="text" id="taskResp" class="form-control" value="Profesional Innovación"></div>
+            <div class="form-group" id="simpleSprintGroup"><label>Sprint / Fecha</label><select id="taskSprint" class="form-control"></select></div>
             <div class="form-group" style="margin-top:20px; border-top:1px solid #eee; padding-top:10px">
-                <label style="display:flex; align-items:center; gap:10px; cursor:pointer">
-                    <input type="checkbox" id="checkRecurrence" onchange="toggleRecurrence(this)"> 
-                    <i class="fas fa-sync-alt"></i> Activar Recurrencia / Multi-Sprint
-                </label>
+                <label style="display:flex; align-items:center; gap:10px; cursor:pointer"><input type="checkbox" id="checkRecurrence" onchange="toggleRecurrence(this)"> <i class="fas fa-sync-alt"></i> Activar Recurrencia</label>
             </div>
-
             <div class="recurrence-panel" id="recurrencePanel">
-                <div class="form-group">
-                    <label>Frecuencia (Copias por Sprint)</label>
-                    <select id="recFrequency" class="form-control">
-                        <option value="1">Única (1 vez por sprint)</option>
-                        <option value="2">Quincenal (2 veces por sprint)</option>
-                        <option value="4">Semanal (4 veces por sprint)</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label>Seleccionar Sprints Destino:</label>
-                    <div class="checkbox-grid" id="sprintCheckboxes"></div>
-                </div>
-                <small style="color:#666">⚠ Esto creará múltiples tarjetas individuales.</small>
+                <div class="form-group"><label>Frecuencia</label><select id="recFrequency" class="form-control"><option value="1">Única</option><option value="2">Quincenal</option><option value="4">Semanal</option></select></div>
+                <div class="form-group"><label>Sprints Destino:</label><div class="checkbox-grid" id="sprintCheckboxes"></div></div>
             </div>
-
             <button class="btn-submit" onclick="saveTask()">Guardar Tarea</button>
         </div>
     </div>
 
-    <div class="modal-overlay" id="configModal">
+    <div class="modal-overlay" id="cloudModal">
         <div class="modal-content">
             <div class="modal-header">
-                <h2>Configuración</h2>
-                <span onclick="closeModal('configModal')" style="cursor:pointer">&times;</span>
+                <h2><i class="fab fa-github"></i> Sincronización GitHub</h2>
+                <span onclick="closeModal('cloudModal')" style="cursor:pointer; font-size:1.5rem">&times;</span>
             </div>
-            
-            <div style="display:flex; gap:20px; flex-wrap:wrap">
-                <div style="flex:1; min-width:200px">
-                    <h3>Sprints</h3>
-                    <div style="display:flex; gap:5px; margin-bottom:5px">
-                        <input id="newSprintInput" type="text" placeholder="Ej: Sprint 7" class="form-control">
-                        <button onclick="addConfigItem('sprints')" class="btn-primary" style="padding:5px 10px">+</button>
-                    </div>
-                    <ul id="configSprintsList" class="config-list"></ul>
+            <div style="background: #f8f9fa; padding: 15px; border-radius: 6px; border: 1px solid #e1e4e8; margin-bottom: 20px;">
+                <p style="margin: 0 0 10px 0; font-size: 0.9rem; color: #586069;">Configura tu conexión para guardar el tablero en la nube.</p>
+                <div class="form-group">
+                    <label>Personal Access Token (Token)</label>
+                    <input type="password" id="ghToken" class="form-control" placeholder="ghp_xxxxxxxxxxxx">
                 </div>
-                <div style="flex:1; min-width:200px">
-                    <h3>Categorías</h3>
-                    <div style="display:flex; gap:5px; margin-bottom:5px">
-                        <input id="newCatInput" type="text" placeholder="Ej: Nueva Cat" class="form-control">
-                        <button onclick="addConfigItem('cats')" class="btn-primary" style="padding:5px 10px">+</button>
+                <div style="display:flex; gap:10px;">
+                    <div class="form-group" style="flex:1">
+                        <label>Usuario / Organización</label>
+                        <input type="text" id="ghOwner" class="form-control" placeholder="Ej: censnnova-bit">
                     </div>
-                    <ul id="configCatsList" class="config-list"></ul>
+                    <div class="form-group" style="flex:1">
+                        <label>Repositorio</label>
+                        <input type="text" id="ghRepo" class="form-control" placeholder="Ej: CRPE">
+                    </div>
                 </div>
+                <div class="form-group">
+                    <label>Nombre del Archivo</label>
+                    <input type="text" id="ghPath" class="form-control" value="roadmap_data.json">
+                </div>
+                <button class="btn-primary" style="width:100%; padding: 8px; border:none; border-radius:4px; font-weight:bold; cursor:pointer" onclick="saveCloudConfig()">Guardar Credenciales</button>
             </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                <button onclick="githubLoad()" style="padding: 15px; background: #e1f5fe; border: 1px solid #b3e5fc; border-radius: 6px; cursor: pointer; text-align: center; color: #0277bd;">
+                    <i class="fas fa-cloud-download-alt" style="font-size: 2rem; margin-bottom: 10px; display: block;"></i>
+                    <strong>BAJAR de la Nube</strong><br>
+                    <span style="font-size: 0.8rem">Reemplaza lo actual con lo de GitHub</span>
+                </button>
+                <button onclick="githubSave()" style="padding: 15px; background: #e8f5e9; border: 1px solid #c8e6c9; border-radius: 6px; cursor: pointer; text-align: center; color: #2e7d32;">
+                    <i class="fas fa-cloud-upload-alt" style="font-size: 2rem; margin-bottom: 10px; display: block;"></i>
+                    <strong>SUBIR a la Nube</strong><br>
+                    <span style="font-size: 0.8rem">Guarda lo actual en GitHub</span>
+                </button>
+            </div>
+            <div id="cloudStatus" style="margin-top: 15px; font-size: 0.9rem; text-align: center; font-weight: bold;"></div>
         </div>
     </div>
 
     <script>
-        // === CONFIGURACIÓN ===
-        const STORAGE_KEY = 'cens_roadmap_v8_reports';
+        // === CONFIGURACIÓN Y DATOS ===
+        const STORAGE_KEY = 'cens_roadmap_local_v10'; // Solo para cache local temporal
         
         const catColors = {
             'Alineación': 'var(--cens-green)',
@@ -324,59 +320,212 @@
 
         let data = { tasks: [], sprints: [...defaultSprints], cats: [...defaultCats] };
 
-        // === INICIO ===
-        document.addEventListener('DOMContentLoaded', () => {
-            try {
-                loadData();
-                renderBoard();
-            } catch (e) {
-                console.error("Error crítico:", e);
-                localStorage.removeItem(STORAGE_KEY);
-                location.reload();
-            }
-        });
+        // === CLOUD / GITHUB INTEGRATION ===
+        const GH_CONFIG_KEY = 'cens_roadmap_gh_config';
+        let ghConfig = { token: '', owner: '', repo: '', path: 'roadmap_data.json' };
 
-        window.onclick = function(event) {
-            if (event.target.classList.contains('modal-overlay')) {
-                event.target.style.display = "none";
+        function loadCloudConfig() {
+            const stored = localStorage.getItem(GH_CONFIG_KEY);
+            if (stored) {
+                ghConfig = JSON.parse(stored);
+                document.getElementById('ghToken').value = ghConfig.token;
+                document.getElementById('ghOwner').value = ghConfig.owner;
+                document.getElementById('ghRepo').value = ghConfig.repo;
+                document.getElementById('ghPath').value = ghConfig.path || 'roadmap_data.json';
             }
         }
 
-        function loadData() {
+        function saveCloudConfig() {
+            ghConfig.token = document.getElementById('ghToken').value.trim();
+            ghConfig.owner = document.getElementById('ghOwner').value.trim();
+            ghConfig.repo = document.getElementById('ghRepo').value.trim();
+            ghConfig.path = document.getElementById('ghPath').value.trim();
+            
+            if(!ghConfig.token || !ghConfig.owner || !ghConfig.repo) {
+                alert("Por favor completa todos los campos (Token, Usuario, Repo)");
+                return;
+            }
+
+            localStorage.setItem(GH_CONFIG_KEY, JSON.stringify(ghConfig));
+            alert("Credenciales guardadas en este navegador.");
+        }
+
+        function openCloudModal() {
+            loadCloudConfig();
+            document.getElementById('cloudModal').style.display = 'flex';
+            document.getElementById('cloudStatus').innerText = '';
+        }
+
+        // Utilidad para Base64 con soporte Unicode
+        function utf8_to_b64(str) { return window.btoa(unescape(encodeURIComponent(str))); }
+        function b64_to_utf8(str) { return decodeURIComponent(escape(window.atob(str))); }
+
+        async function githubLoad() {
+            const status = document.getElementById('cloudStatus');
+            if(!ghConfig.token) return alert("Configura primero las credenciales.");
+            
+            status.innerText = "Conectando con GitHub...";
+            status.style.color = "blue";
+
+            try {
+                const url = `https://api.github.com/repos/${ghConfig.owner}/${ghConfig.repo}/contents/${ghConfig.path}`;
+                const response = await fetch(url, {
+                    headers: { 'Authorization': `token ${ghConfig.token}`, 'Accept': 'application/vnd.github.v3+json' }
+                });
+
+                if (!response.ok) throw new Error(`Error ${response.status}: ${response.statusText}`);
+
+                const json = await response.json();
+                const content = b64_to_utf8(json.content);
+                
+                data = JSON.parse(content);
+                saveToLocalStorage();
+                renderBoard();
+                
+                status.innerText = "✅ ¡Datos descargados exitosamente!";
+                status.style.color = "green";
+                setTimeout(() => closeModal('cloudModal'), 1500);
+
+            } catch (error) {
+                console.error(error);
+                status.innerText = "❌ Error: " + error.message;
+                status.style.color = "red";
+            }
+        }
+
+        async function githubSave() {
+            const status = document.getElementById('cloudStatus');
+            if(!ghConfig.token) return alert("Configura primero las credenciales.");
+
+            status.innerText = "Preparando subida...";
+            status.style.color = "blue";
+
+            try {
+                const url = `https://api.github.com/repos/${ghConfig.owner}/${ghConfig.repo}/contents/${ghConfig.path}`;
+                
+                // 1. Obtener SHA actual (si existe)
+                let sha = null;
+                try {
+                    const checkResp = await fetch(url, {
+                        headers: { 'Authorization': `token ${ghConfig.token}` }
+                    });
+                    if (checkResp.ok) {
+                        const fileData = await checkResp.json();
+                        sha = fileData.sha;
+                    }
+                } catch (e) { console.log("Archivo nuevo o error de red", e); }
+
+                // 2. Subir nuevo contenido
+                const contentBase64 = utf8_to_b64(JSON.stringify(data, null, 2));
+                const body = {
+                    message: `Actualización roadmap ${new Date().toLocaleString()}`,
+                    content: contentBase64
+                };
+                if (sha) body.sha = sha;
+
+                const putResp = await fetch(url, {
+                    method: 'PUT',
+                    headers: {
+                        'Authorization': `token ${ghConfig.token}`,
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(body)
+                });
+
+                if (!putResp.ok) throw new Error(`Error subiendo: ${putResp.statusText}`);
+
+                status.innerText = "✅ ¡Guardado en GitHub correctamente!";
+                status.style.color = "green";
+                
+            } catch (error) {
+                console.error(error);
+                status.innerText = "❌ Error al guardar: " + error.message;
+                status.style.color = "red";
+            }
+        }
+
+        // === INICIALIZACIÓN ===
+        document.addEventListener('DOMContentLoaded', () => {
+            loadFromLocalStorage(); // Intenta cargar lo último que hiciste en este navegador
+            renderBoard();
+        });
+
+        // === GESTIÓN DE ARCHIVOS (LA SOLUCIÓN TI-FRIENDLY) ===
+        
+        // 1. Botón Guardar (Exportar JSON)
+        function downloadBackup() {
+            const jsonStr = JSON.stringify(data, null, 2);
+            const blob = new Blob([jsonStr], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            
+            // Crear nombre con fecha para versionamiento
+            const date = new Date().toISOString().slice(0,10);
+            const link = document.createElement("a");
+            link.href = url;
+            link.download = `tablero_innovacion_${date}.json`;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            
+            alert("✅ Archivo guardado.\n\nGuárdalo en tu OneDrive/SharePoint para asegurar la información.");
+        }
+
+        // 2. Botón Cargar (Importar JSON)
+        function triggerFileInput() {
+            document.getElementById('fileInput').click();
+        }
+
+        function loadFromFile(input) {
+            const file = input.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                try {
+                    const jsonData = JSON.parse(e.target.result);
+                    // Validar estructura básica
+                    if (Array.isArray(jsonData.tasks) && Array.isArray(jsonData.sprints)) {
+                        data = jsonData;
+                        saveToLocalStorage(); // Guardar en cache local también
+                        renderBoard();
+                        alert("✅ Tablero cargado exitosamente.");
+                    } else {
+                        alert("❌ El archivo no tiene el formato correcto.");
+                    }
+                } catch (err) {
+                    alert("❌ Error al leer el archivo JSON.");
+                    console.error(err);
+                }
+            };
+            reader.readAsText(file);
+            // Limpiar input para permitir cargar el mismo archivo si se modifica
+            input.value = ''; 
+        }
+
+        // === PERSISTENCIA LOCAL (Cache) ===
+        function loadFromLocalStorage() {
             try {
                 const stored = localStorage.getItem(STORAGE_KEY);
                 if (stored) {
                     data = JSON.parse(stored);
-                    if (!Array.isArray(data.tasks)) throw new Error("Datos corruptos");
-                    if (!data.sprints) data.sprints = [...defaultSprints];
-                    if (!data.cats) data.cats = [...defaultCats];
                 } else {
                     initDefaultTasks();
-                    saveData();
+                    saveToLocalStorage();
                 }
-            } catch (error) {
-                console.warn("Error leyendo datos, usando temporales.");
-                initDefaultTasks();
-            }
+            } catch (e) { initDefaultTasks(); }
         }
 
-        function saveData() {
-            try {
-                localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
-                renderBoard();
-            } catch (e) {
-                renderBoard();
-            }
+        function saveToLocalStorage() {
+            try { localStorage.setItem(STORAGE_KEY, JSON.stringify(data)); } catch (e) {}
         }
 
         function initDefaultTasks() {
             data.tasks = [
-                { id: 1, status: 'todo', cat: 'Comunicación', title: 'Informe ejecutivo de avances Q1', resp: 'Prof. Innovación', sprint: 'Sprint 1 (Ene)' },
-                { id: 2, status: 'doing', cat: 'Alineación', title: 'Sesiones con líder control pérdidas', resp: 'Prof. Innovación', sprint: 'Sprint 1 (Ene)' }
+                { id: 1, status: 'todo', cat: 'Comunicación', title: 'Ejemplo: Cargar archivo de OneDrive', resp: 'Tú', sprint: 'Sprint 1 (Ene)' }
             ];
         }
 
-        // === RENDERIZADO TABLERO ===
+        // === RENDERIZADO TABLERO (IGUAL QUE ANTES) ===
         function renderBoard() {
             ['todo', 'doing', 'done'].forEach(s => {
                 const col = document.getElementById(`col-${s}`);
@@ -423,107 +572,7 @@
             </div>`;
         }
 
-        // === LOGICA REPORTES ===
-        function openReportModal() {
-            const catContainer = document.getElementById('catReportContainer');
-            const sprintContainer = document.getElementById('sprintReportContainer');
-            catContainer.innerHTML = '';
-            sprintContainer.innerHTML = '';
-
-            // 1. Calcular Stats por Categoría
-            const catStats = {};
-            data.cats.forEach(c => catStats[c] = { total: 0, done: 0 });
-            
-            // 2. Calcular Stats por Sprint
-            const sprintStats = {};
-            data.sprints.forEach(s => sprintStats[s] = { total: 0, done: 0 });
-
-            // Llenar datos
-            data.tasks.forEach(t => {
-                // Categoría
-                if(!catStats[t.cat]) catStats[t.cat] = { total: 0, done: 0 };
-                catStats[t.cat].total++;
-                if(t.status === 'done') catStats[t.cat].done++;
-
-                // Sprint
-                if(!sprintStats[t.sprint]) sprintStats[t.sprint] = { total: 0, done: 0 };
-                sprintStats[t.sprint].total++;
-                if(t.status === 'done') sprintStats[t.sprint].done++;
-            });
-
-            // Render Categoría
-            Object.keys(catStats).forEach(cat => {
-                const s = catStats[cat];
-                if(s.total === 0) return;
-                const pct = Math.round((s.done / s.total) * 100);
-                const color = catColors[cat] || '#999';
-                
-                catContainer.innerHTML += `
-                    <div class="report-item">
-                        <span class="report-label" style="color:${color}">${cat}</span>
-                        <div class="report-bar-bg">
-                            <div class="report-bar-fill" style="width:${pct}%; background:${color}"></div>
-                        </div>
-                        <span class="report-value">${pct}%</span>
-                    </div>`;
-            });
-
-            // Render Sprints
-            Object.keys(sprintStats).forEach(sprint => {
-                const s = sprintStats[sprint];
-                if(s.total === 0) return;
-                const pct = Math.round((s.done / s.total) * 100);
-                const color = pct === 100 ? 'var(--cens-green)' : 'var(--cens-dark-blue)';
-                
-                sprintContainer.innerHTML += `
-                    <div class="report-item">
-                        <span class="report-label" style="width:150px">${sprint}</span>
-                        <div class="report-bar-bg">
-                            <div class="report-bar-fill" style="width:${pct}%; background:${color}"></div>
-                        </div>
-                        <span class="report-value">${pct}%</span>
-                    </div>`;
-            });
-
-            document.getElementById('reportModal').style.display = 'flex';
-        }
-
-        // === FUNCIONES TAREAS ===
-        function openTaskModal(taskId = null) {
-            const sprintSel = document.getElementById('taskSprint');
-            const catSel = document.getElementById('taskCat');
-            const sprintChecks = document.getElementById('sprintCheckboxes');
-            
-            sprintSel.innerHTML = data.sprints.map(s => `<option value="${s}">${s}</option>`).join('');
-            catSel.innerHTML = data.cats.map(c => `<option value="${c}">${c}</option>`).join('');
-            sprintChecks.innerHTML = data.sprints.map(s => `
-                <label class="check-item"><input type="checkbox" value="${s}" class="rec-sprint-check"> ${s}</label>
-            `).join('');
-
-            document.getElementById('taskId').value = '';
-            document.getElementById('taskTitle').value = '';
-            document.getElementById('taskResp').value = 'Profesional Innovación';
-            document.getElementById('checkRecurrence').checked = false;
-            toggleRecurrence(document.getElementById('checkRecurrence'));
-
-            if (taskId && taskId !== 'undefined') {
-                const task = data.tasks.find(t => String(t.id) === String(taskId));
-                if(task) {
-                    document.getElementById('modalTitle').innerText = 'Editar Tarea';
-                    document.getElementById('taskId').value = task.id;
-                    document.getElementById('taskCat').value = task.cat;
-                    document.getElementById('taskTitle').value = task.title;
-                    document.getElementById('taskResp').value = task.resp;
-                    document.getElementById('taskSprint').value = task.sprint;
-                    document.getElementById('checkRecurrence').parentElement.style.display = 'none';
-                }
-            } else {
-                document.getElementById('modalTitle').innerText = 'Nueva Tarea';
-                document.getElementById('checkRecurrence').parentElement.style.display = 'flex';
-            }
-            document.getElementById('taskModal').style.display = 'flex';
-        }
-
+        // === FUNCIONES LÓGICAS (IGUAL QUE ANTES) ===
         function saveTask() {
             const id = document.getElementById('taskId').value;
             const title = document.getElementById('taskTitle').value;
@@ -531,38 +580,27 @@
             const resp = document.getElementById('taskResp').value;
             const isRecurrent = document.getElementById('checkRecurrence').checked;
 
-            if(!title) return alert("Por favor escribe el nombre de la actividad.");
+            if(!title) return alert("Escribe el nombre de la actividad.");
 
             if(id) {
                 const task = data.tasks.find(t => String(t.id) === String(id));
-                if(task) {
-                    task.title = title;
-                    task.cat = cat;
-                    task.resp = resp;
-                    task.sprint = document.getElementById('taskSprint').value;
-                }
+                if(task) { task.title = title; task.cat = cat; task.resp = resp; task.sprint = document.getElementById('taskSprint').value; }
             } else {
                 if (isRecurrent) {
-                    const frequency = parseInt(document.getElementById('recFrequency').value);
-                    const checkboxes = document.querySelectorAll('.rec-sprint-check:checked');
-                    if(checkboxes.length === 0) return alert("Selecciona al menos un sprint.");
-                    checkboxes.forEach(chk => {
-                        const sprintName = chk.value;
-                        for(let i=1; i<=frequency; i++) {
-                            let suffix = frequency > 1 ? ` (${i})` : '';
-                            data.tasks.push({
-                                id: Date.now() + Math.random(),
-                                status: 'todo',
-                                cat, resp, sprint: sprintName,
-                                title: title + suffix
-                            });
+                    const freq = parseInt(document.getElementById('recFrequency').value);
+                    const checks = document.querySelectorAll('.rec-sprint-check:checked');
+                    if(checks.length === 0) return alert("Selecciona sprints.");
+                    checks.forEach(chk => {
+                        for(let i=1; i<=freq; i++) {
+                            data.tasks.push({ id: Date.now()+Math.random(), status: 'todo', cat, resp, sprint: chk.value, title: title + (freq>1?` (${i})`:'') });
                         }
                     });
                 } else {
                     data.tasks.push({ id: Date.now(), status: 'todo', cat, resp, title, sprint: document.getElementById('taskSprint').value });
                 }
             }
-            saveData();
+            saveToLocalStorage(); // Autoguardado local
+            renderBoard();
             closeModal('taskModal');
         }
 
@@ -574,71 +612,83 @@
                 const nextIdx = idx + dir;
                 if(nextIdx >= 0 && nextIdx < flow.length) {
                     task.status = flow[nextIdx];
-                    saveData();
+                    saveToLocalStorage(); // Autoguardado local
+                    renderBoard();
                 }
             }
         }
 
-        // === UTILS ===
-        function toggleRecurrence(checkbox) {
-            const panel = document.getElementById('recurrencePanel');
-            const simpleGroup = document.getElementById('simpleSprintGroup');
-            if(checkbox.checked) {
-                panel.style.display = 'block';
-                simpleGroup.style.display = 'none';
-            } else {
-                panel.style.display = 'none';
-                simpleGroup.style.display = 'block';
-            }
-        }
-        function closeModal(id) { document.getElementById(id).style.display = 'none'; }
-        
-        function openConfigModal() {
-            updateConfigLists();
-            document.getElementById('configModal').style.display = 'flex';
-        }
-        function updateConfigLists() {
-            const render = (arr, id, type) => {
-                document.getElementById(id).innerHTML = arr.map((item, i) => `
-                    <li class="config-item">${item} <button class="btn-sm" onclick="removeItem('${type}', ${i})">X</button></li>
-                `).join('');
-            };
-            render(data.sprints, 'configSprintsList', 'sprints');
-            render(data.cats, 'configCatsList', 'cats');
-        }
-        function addConfigItem(type) {
-            const val = document.getElementById(type === 'sprints' ? 'newSprintInput' : 'newCatInput').value;
-            if(val) {
-                data[type].push(val);
-                document.getElementById(type === 'sprints' ? 'newSprintInput' : 'newCatInput').value = '';
-                updateConfigLists();
-                saveData();
-            }
-        }
-        function removeItem(type, index) {
-            if(confirm("¿Eliminar?")) {
-                data[type].splice(index, 1);
-                updateConfigLists();
-                saveData();
-            }
-        }
-        function safeReset() {
-            if (prompt("PELIGRO: Esto borrará todas las tareas.\nEscribe: BORRAR") === "BORRAR") {
-                localStorage.removeItem(STORAGE_KEY);
-                location.reload();
-            }
-        }
-        function downloadCSV() {
-            let csvContent = "\uFEFFID;Estado;Categoría;Tarea;Responsable;Sprint\n";
+        // === REPORTES, MODALES Y UTILS (MISMOS QUE VERSIÓN ANTERIOR) ===
+        function openReportModal() {
+            const catContainer = document.getElementById('catReportContainer');
+            const sprintContainer = document.getElementById('sprintReportContainer');
+            catContainer.innerHTML = ''; sprintContainer.innerHTML = '';
+
+            const catStats = {}; data.cats.forEach(c => catStats[c] = { total: 0, done: 0 });
+            const sprintStats = {}; data.sprints.forEach(s => sprintStats[s] = { total: 0, done: 0 });
+
             data.tasks.forEach(t => {
-                csvContent += `${t.id};${t.status};${t.cat};"${t.title.replace(/(\r\n|\n|\r)/gm, " ")}";${t.resp};${t.sprint}\n`;
+                if(!catStats[t.cat]) catStats[t.cat] = { total: 0, done: 0 };
+                catStats[t.cat].total++;
+                if(t.status === 'done') catStats[t.cat].done++;
+
+                if(!sprintStats[t.sprint]) sprintStats[t.sprint] = { total: 0, done: 0 };
+                sprintStats[t.sprint].total++;
+                if(t.status === 'done') sprintStats[t.sprint].done++;
             });
-            const link = document.createElement("a");
-            link.href = URL.createObjectURL(new Blob([csvContent], { type: 'text/csv;charset=utf-8;' }));
-            link.download = "reporte_cens_2026.csv";
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
+
+            const drawBar = (container, label, stats, color) => {
+                if(stats.total === 0) return;
+                const pct = Math.round((stats.done / stats.total) * 100);
+                container.innerHTML += `
+                    <div class="report-item"><span class="report-label" style="color:${color}">${label}</span>
+                    <div class="report-bar-bg"><div class="report-bar-fill" style="width:${pct}%; background:${color}"></div></div>
+                    <span class="report-value">${pct}%</span></div>`;
+            };
+
+            Object.keys(catStats).forEach(c => drawBar(catContainer, c, catStats[c], catColors[c]||'#999'));
+            Object.keys(sprintStats).forEach(s => drawBar(sprintContainer, s, sprintStats[s], sprintStats[s].total > 0 && sprintStats[s].done === sprintStats[s].total ? 'var(--cens-green)' : 'var(--cens-dark-blue)'));
+
+            document.getElementById('reportModal').style.display = 'flex';
+        }
+
+        function openTaskModal(taskId=null) {
+            const sList = document.getElementById('taskSprint'); const cList = document.getElementById('taskCat'); const chkList = document.getElementById('sprintCheckboxes');
+            sList.innerHTML = data.sprints.map(s=>`<option value="${s}">${s}</option>`).join('');
+            cList.innerHTML = data.cats.map(c=>`<option value="${c}">${c}</option>`).join('');
+            chkList.innerHTML = data.sprints.map(s=>`<label class="check-item"><input type="checkbox" value="${s}" class="rec-sprint-check"> ${s}</label>`).join('');
+            
+            document.getElementById('taskId').value = ''; document.getElementById('taskTitle').value = ''; document.getElementById('checkRecurrence').checked = false; toggleRecurrence(document.getElementById('checkRecurrence'));
+
+            if(taskId && taskId !== 'undefined') {
+                const t = data.tasks.find(x => String(x.id) === String(taskId));
+                if(t) {
+                    document.getElementById('modalTitle').innerText = 'Editar Tarea';
+                    document.getElementById('taskId').value = t.id; document.getElementById('taskCat').value = t.cat; document.getElementById('taskTitle').value = t.title; document.getElementById('taskResp').value = t.resp; document.getElementById('taskSprint').value = t.sprint;
+                    document.getElementById('checkRecurrence').parentElement.style.display = 'none';
+                }
+            } else { document.getElementById('modalTitle').innerText = 'Nueva Tarea'; document.getElementById('checkRecurrence').parentElement.style.display = 'flex'; }
+            document.getElementById('taskModal').style.display = 'flex';
+        }
+
+        function toggleRecurrence(chk) { document.getElementById('recurrencePanel').style.display = chk.checked ? 'block' : 'none'; document.getElementById('simpleSprintGroup').style.display = chk.checked ? 'none' : 'block'; }
+        function closeModal(id) { document.getElementById(id).style.display = 'none'; }
+        window.onclick = function(e) { if(e.target.classList.contains('modal-overlay')) e.target.style.display='none'; }
+        
+        function openConfigModal() { updateConfigUI(); document.getElementById('configModal').style.display = 'flex'; }
+        function updateConfigUI() {
+            const build = (arr, id, type) => document.getElementById(id).innerHTML = arr.map((x,i)=>`<li class="config-item">${x} <button class="btn-sm" onclick="rmCfg('${type}',${i})">X</button></li>`).join('');
+            build(data.sprints, 'configSprintsList', 'sprints'); build(data.cats, 'configCatsList', 'cats');
+        }
+        function addConfigItem(type) { const el = document.getElementById(type==='sprints'?'newSprintInput':'newCatInput'); if(el.value){ data[type].push(el.value); el.value=''; updateConfigUI(); saveToLocalStorage(); } }
+        function rmCfg(type, idx) { if(confirm('¿Eliminar?')){ data[type].splice(idx,1); updateConfigUI(); saveToLocalStorage(); } }
+        
+        function safeReset() { if(confirm('¿Borrar todo?')){ localStorage.removeItem(STORAGE_KEY); location.reload(); } }
+        
+        function downloadCSV() {
+            let csv = "\uFEFFID;Estado;Categoría;Tarea;Responsable;Sprint\n";
+            data.tasks.forEach(t => csv += `${t.id};${t.status};${t.cat};"${t.title.replace(/(\r\n|\n|\r)/gm," ")}";${t.resp};${t.sprint}\n`);
+            const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([csv], {type:'text/csv;charset=utf-8;'})); a.download = "reporte.csv"; document.body.appendChild(a); a.click(); document.body.removeChild(a);
         }
     </script>
 </body>
