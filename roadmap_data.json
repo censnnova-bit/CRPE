@@ -2,7 +2,7 @@
   "tasks": [
     {
       "id": 1767900269450,
-      "status": "doing",
+      "status": "todo",
       "cat": "Alineación",
       "title": "Sesión con gestora de comunicaciones CRPE",
       "resp": "Profesional Innovación",
@@ -10,7 +10,7 @@
     },
     {
       "id": 1767900269451,
-      "status": "doing",
+      "status": "todo",
       "cat": "Alineación",
       "title": "Sesión con líder control pérdidas",
       "resp": "Profesional Innovación",
@@ -18,7 +18,7 @@
     },
     {
       "id": 1767900269452,
-      "status": "doing",
+      "status": "todo",
       "cat": "Alineación",
       "title": "Sesión con gestores sociales CRPE",
       "resp": "Profesional Innovación",
@@ -26,7 +26,7 @@
     },
     {
       "id": 1767900269453,
-      "status": "doing",
+      "status": "todo",
       "cat": "Comunicación",
       "title": "Boletines internos sobre avances CRPE",
       "resp": "Profesional Innovación",
@@ -34,7 +34,7 @@
     },
     {
       "id": 1767900269454,
-      "status": "done",
+      "status": "todo",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos - TG (1)",
       "resp": "Profesional Innovación",
@@ -42,7 +42,7 @@
     },
     {
       "id": 1767900269455,
-      "status": "done",
+      "status": "todo",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos - TG (2)",
       "resp": "Profesional Innovación",
@@ -50,7 +50,7 @@
     },
     {
       "id": 1767900269456,
-      "status": "doing",
+      "status": "todo",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos - TG (3)",
       "resp": "Profesional Innovación",
@@ -58,7 +58,7 @@
     },
     {
       "id": 1767900269457,
-      "status": "doing",
+      "status": "todo",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos - TG (4)",
       "resp": "Profesional Innovación",
@@ -66,7 +66,7 @@
     },
     {
       "id": 1767900269458,
-      "status": "done",
+      "status": "todo",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos SafeGRID (1)",
       "resp": "Profesional Innovación",
@@ -74,7 +74,7 @@
     },
     {
       "id": 1767900269459,
-      "status": "doing",
+      "status": "todo",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos SafeGRID (2)",
       "resp": "Profesional Innovación",
@@ -82,7 +82,7 @@
     },
     {
       "id": 1767900269460,
-      "status": "doing",
+      "status": "todo",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos SafeGRID (3)",
       "resp": "Profesional Innovación",
@@ -90,7 +90,7 @@
     },
     {
       "id": 1767900269461,
-      "status": "doing",
+      "status": "todo",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos SafeGRID (4)",
       "resp": "Profesional Innovación",
@@ -98,7 +98,7 @@
     },
     {
       "id": 1767900269462,
-      "status": "done",
+      "status": "todo",
       "cat": "Gestión Ágil",
       "title": "Revisión backlog prototipos (materiales, transformadores, liquidaciones) (1)",
       "resp": "Profesional Innovación",
@@ -106,7 +106,7 @@
     },
     {
       "id": 1767900269463,
-      "status": "doing",
+      "status": "todo",
       "cat": "Gestión Ágil",
       "title": "Revisión backlog prototipos (materiales, transformadores, liquidaciones) (2)",
       "resp": "Profesional Innovación",
@@ -114,7 +114,7 @@
     },
     {
       "id": 1767900269464,
-      "status": "doing",
+      "status": "todo",
       "cat": "Herramientas",
       "title": "Testeo prototipos (materiales, transformadores, liquidaciones) (1)",
       "resp": "Profesional Innovación",
@@ -122,7 +122,7 @@
     },
     {
       "id": 1767900269465,
-      "status": "doing",
+      "status": "todo",
       "cat": "Herramientas",
       "title": "Testeo prototipos (materiales, transformadores, liquidaciones) (2)",
       "resp": "Profesional Innovación",
@@ -434,7 +434,7 @@
     },
     {
       "id": 1768514127044.077,
-      "status": "doing",
+      "status": "todo",
       "cat": "Alineación",
       "resp": "Profesional Innovación",
       "sprint": "Sprint 1 (Ene)",
