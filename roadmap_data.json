@@ -50,7 +50,7 @@
     },
     {
       "id": 1767900269456,
-      "status": "todo",
+      "status": "doing",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos - TG (3)",
       "resp": "Profesional Innovación",
@@ -58,7 +58,7 @@
     },
     {
       "id": 1767900269457,
-      "status": "todo",
+      "status": "doing",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos - TG (4)",
       "resp": "Profesional Innovación",
@@ -82,7 +82,7 @@
     },
     {
       "id": 1767900269460,
-      "status": "todo",
+      "status": "doing",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos SafeGRID (3)",
       "resp": "Profesional Innovación",
@@ -90,7 +90,7 @@
     },
     {
       "id": 1767900269461,
-      "status": "todo",
+      "status": "doing",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos SafeGRID (4)",
       "resp": "Profesional Innovación",
@@ -122,7 +122,7 @@
     },
     {
       "id": 1767900269465,
-      "status": "todo",
+      "status": "doing",
       "cat": "Herramientas",
       "title": "Testeo prototipos (materiales, transformadores, liquidaciones) (2)",
       "resp": "Profesional Innovación",
@@ -431,6 +431,14 @@
       "title": "Vigilancia tecnológica - CRPE",
       "resp": "Profesional Innovación",
       "sprint": "Sprint 6 (Jun)"
+    },
+    {
+      "id": 1768514127044.077,
+      "status": "doing",
+      "cat": "Alineación",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 1 (Ene)",
+      "title": "Reunión de verificación de estrategia para safeGRID (desde lo legal y temas de multas)"
     }
   ],
   "sprints": [
