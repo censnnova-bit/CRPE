@@ -445,10 +445,50 @@
         }
 
         // === INICIALIZACIÓN ===
-        document.addEventListener('DOMContentLoaded', () => {
-            loadFromLocalStorage(); // Intenta cargar lo último que hiciste en este navegador
+        document.addEventListener('DOMContentLoaded', async () => {
+            // Cargar configuración de credenciales (si existen en este PC)
+            loadCloudConfig();
+
+            // ESTRATEGIA DE CARGA AUTOMÁTICA (Magic Link):
+            // 1. Intentamos leer 'roadmap_data.json' directamente del sitio (Público, lectura rápida)
+            // 2. Si falla (archivo no existe o error), leemos de LocalStorage (Caché local)
+            
+            const loadedFromServer = await loadPublicData();
+
+            if (!loadedFromServer) {
+                loadFromLocalStorage(); // Fallback a local
+                console.log("Modo: Local (No se encontró archivo en nube)");
+            } else {
+                console.log("Modo: Nube (Datos sincronizados)");
+                // Opcional: Mostrar un pequeño indicador visual
+                const title = document.querySelector('.header-title h2');
+                if(title) title.innerHTML += ' <span style="font-size:0.7rem; background:#dcfce7; color:#166534; padding:2px 6px; border-radius:4px; margin-left:8px">☁️ Sincronizado</span>';
+            }
+
             renderBoard();
         });
+
+        // Función para leer datos PÚBLICOS (Sin Token)
+        // Esto permite que cualquiera con el link vea el tablero actualizado
+        async function loadPublicData() {
+            try {
+                // Usamos fetch relativo. Funciona perfecto en GitHub Pages.
+                // Agregamos timestamp para evitar caché agresivo del navegador
+                const response = await fetch('./roadmap_data.json?t=' + new Date().getTime());
+                
+                if (response.ok) {
+                    const jsonData = await response.json();
+                    if (Array.isArray(jsonData.tasks)) {
+                        data = jsonData;
+                        return true;
+                    }
+                }
+            } catch (e) {
+                // Es normal que falle si es la primera vez y no has subido el archivo aún
+                console.warn("No se encontraron datos públicos aún.", e);
+            }
+            return false;
+        }
 
         // === GESTIÓN DE ARCHIVOS (LA SOLUCIÓN TI-FRIENDLY) ===
         
