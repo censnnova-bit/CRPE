@@ -129,6 +129,46 @@
       "sprint": "Sprint 1 (Ene)"
     },
     {
+      "id": 1768514127044.077,
+      "status": "doing",
+      "cat": "Alineación",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 1 (Ene)",
+      "title": "Reunión de verificación de estrategia para safeGRID (desde lo legal y temas de multas)"
+    },
+    {
+      "id": 1768585068087.3284,
+      "status": "todo",
+      "cat": "Gestión Ágil",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 2 (Feb)",
+      "title": "Ceremonia de seguimiento de proyectos - TG (1)"
+    },
+    {
+      "id": 1768585068087.4675,
+      "status": "todo",
+      "cat": "Gestión Ágil",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 2 (Feb)",
+      "title": "Ceremonia de seguimiento de proyectos - TG (2)"
+    },
+    {
+      "id": 1768585068087.5488,
+      "status": "todo",
+      "cat": "Gestión Ágil",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 2 (Feb)",
+      "title": "Ceremonia de seguimiento de proyectos - TG (3)"
+    },
+    {
+      "id": 1768585068087.4756,
+      "status": "todo",
+      "cat": "Gestión Ágil",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 2 (Feb)",
+      "title": "Ceremonia de seguimiento de proyectos - TG (4)"
+    },
+    {
       "id": 1767900269466,
       "status": "todo",
       "cat": "Alineación",
@@ -431,46 +471,6 @@
       "title": "Vigilancia tecnológica - CRPE",
       "resp": "Profesional Innovación",
       "sprint": "Sprint 6 (Jun)"
-    },
-    {
-      "id": 1768514127044.077,
-      "status": "doing",
-      "cat": "Alineación",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 1 (Ene)",
-      "title": "Reunión de verificación de estrategia para safeGRID (desde lo legal y temas de multas)"
-    },
-    {
-      "id": 1768585068087.3284,
-      "status": "todo",
-      "cat": "Gestión Ágil",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 2 (Feb)",
-      "title": "Ceremonia de seguimiento de proyectos - TG (1)"
-    },
-    {
-      "id": 1768585068087.4675,
-      "status": "todo",
-      "cat": "Gestión Ágil",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 2 (Feb)",
-      "title": "Ceremonia de seguimiento de proyectos - TG (2)"
-    },
-    {
-      "id": 1768585068087.5488,
-      "status": "todo",
-      "cat": "Gestión Ágil",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 2 (Feb)",
-      "title": "Ceremonia de seguimiento de proyectos - TG (3)"
-    },
-    {
-      "id": 1768585068087.4756,
-      "status": "todo",
-      "cat": "Gestión Ágil",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 2 (Feb)",
-      "title": "Ceremonia de seguimiento de proyectos - TG (4)"
     }
   ],
   "sprints": [
