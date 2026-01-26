@@ -2,27 +2,27 @@
   "tasks": [
     {
       "id": 1767900269450,
-      "status": "doing",
+      "status": "todo",
       "cat": "Alineación",
       "title": "Sesión con gestora de comunicaciones CRPE",
       "resp": "Profesional Innovación",
-      "sprint": "Sprint 1 (Ene)"
+      "sprint": "Sprint 2 (Feb)"
     },
     {
       "id": 1767900269451,
-      "status": "doing",
+      "status": "todo",
       "cat": "Alineación",
       "title": "Sesión con líder control pérdidas",
       "resp": "Profesional Innovación",
-      "sprint": "Sprint 1 (Ene)"
+      "sprint": "Sprint 2 (Feb)"
     },
     {
       "id": 1767900269452,
-      "status": "doing",
+      "status": "todo",
       "cat": "Alineación",
       "title": "Sesión con gestores sociales CRPE",
       "resp": "Profesional Innovación",
-      "sprint": "Sprint 1 (Ene)"
+      "sprint": "Sprint 2 (Feb)"
     },
     {
       "id": 1767900269453,
@@ -50,7 +50,7 @@
     },
     {
       "id": 1767900269456,
-      "status": "doing",
+      "status": "done",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos - TG (3)",
       "resp": "Profesional Innovación",
@@ -82,7 +82,7 @@
     },
     {
       "id": 1767900269460,
-      "status": "doing",
+      "status": "done",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos SafeGRID (3)",
       "resp": "Profesional Innovación",
@@ -116,16 +116,16 @@
       "id": 1767900269464,
       "status": "doing",
       "cat": "Herramientas",
-      "title": "Testeo prototipos (materiales, transformadores, liquidaciones) (1)",
+      "title": "Testeo prototipos (materiales, transformadores, liquidaciones)",
       "resp": "Profesional Innovación",
       "sprint": "Sprint 1 (Ene)"
     },
     {
       "id": 1767900269465,
       "status": "doing",
-      "cat": "Herramientas",
-      "title": "Testeo prototipos (materiales, transformadores, liquidaciones) (2)",
-      "resp": "Profesional Innovación",
+      "cat": "Alineación",
+      "title": "Preparación socialización proyecto SafeGRID con enfoque en impactos y estrategias de respuesta ante reclamos",
+      "resp": "Profesional Innovación/ Profesional Técnico Innovación",
       "sprint": "Sprint 1 (Ene)"
     },
     {
