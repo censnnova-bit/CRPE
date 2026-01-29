@@ -252,7 +252,7 @@
       "id": 1767900269476,
       "status": "todo",
       "cat": "Herramientas",
-      "title": "Testeo prototipos (materiales, transformadores, liquidaciones) (1)",
+      "title": "Testeo prototipos (materiales, transformadores, liquidaciones) (Semana 1 - 2)",
       "resp": "Profesional Innovación",
       "sprint": "Sprint 2 (Feb)"
     },
@@ -260,7 +260,7 @@
       "id": 1767900269477,
       "status": "todo",
       "cat": "Herramientas",
-      "title": "Testeo prototipos (materiales, transformadores, liquidaciones) (2)",
+      "title": "Testeo prototipos (materiales, transformadores, liquidaciones) (Semana 3 - 4)",
       "resp": "Profesional Innovación",
       "sprint": "Sprint 2 (Feb)"
     },
@@ -292,7 +292,7 @@
       "id": 1767900269481,
       "status": "todo",
       "cat": "Estudios",
-      "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (1)",
+      "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (Semana 1)",
       "resp": "Profesional Innovación",
       "sprint": "Sprint 3 (Mar)"
     },
@@ -300,7 +300,7 @@
       "id": 1767900269482,
       "status": "todo",
       "cat": "Estudios",
-      "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (2)",
+      "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (Semana 2)",
       "resp": "Profesional Innovación",
       "sprint": "Sprint 3 (Mar)"
     },
@@ -308,7 +308,7 @@
       "id": 1767900269483,
       "status": "todo",
       "cat": "Estudios",
-      "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (3)",
+      "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (Semana 3)",
       "resp": "Profesional Innovación",
       "sprint": "Sprint 3 (Mar)"
     },
@@ -316,7 +316,7 @@
       "id": 1767900269484,
       "status": "todo",
       "cat": "Estudios",
-      "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (4)",
+      "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (Semana 4)",
       "resp": "Profesional Innovación",
       "sprint": "Sprint 3 (Mar)"
     },
@@ -324,7 +324,7 @@
       "id": 1767900269485,
       "status": "todo",
       "cat": "Gestión Ágil",
-      "title": "Ceremonia de seguimiento de proyectos SafeGRID (1)",
+      "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 1)",
       "resp": "Profesional Innovación",
       "sprint": "Sprint 3 (Mar)"
     },
@@ -332,7 +332,7 @@
       "id": 1767900269486,
       "status": "todo",
       "cat": "Gestión Ágil",
-      "title": "Ceremonia de seguimiento de proyectos SafeGRID (2)",
+      "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 2)",
       "resp": "Profesional Innovación",
       "sprint": "Sprint 3 (Mar)"
     },
@@ -340,7 +340,7 @@
       "id": 1767900269487,
       "status": "todo",
       "cat": "Gestión Ágil",
-      "title": "Ceremonia de seguimiento de proyectos SafeGRID (3)",
+      "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 3)",
       "resp": "Profesional Innovación",
       "sprint": "Sprint 3 (Mar)"
     },
@@ -348,7 +348,7 @@
       "id": 1767900269488,
       "status": "todo",
       "cat": "Gestión Ágil",
-      "title": "Ceremonia de seguimiento de proyectos SafeGRID (4)",
+      "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 4)",
       "resp": "Profesional Innovación",
       "sprint": "Sprint 3 (Mar)"
     },
@@ -372,7 +372,7 @@
       "id": 1767900269491,
       "status": "todo",
       "cat": "Gestión Ágil",
-      "title": "Ceremonia de seguimiento de proyectos SafeGRID (1)",
+      "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 1)",
       "resp": "Profesional Innovación",
       "sprint": "Sprint 4 (Abr)"
     },
@@ -380,7 +380,7 @@
       "id": 1767900269492,
       "status": "todo",
       "cat": "Gestión Ágil",
-      "title": "Ceremonia de seguimiento de proyectos SafeGRID (2)",
+      "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 2)",
       "resp": "Profesional Innovación",
       "sprint": "Sprint 4 (Abr)"
     },
@@ -388,7 +388,7 @@
       "id": 1767900269493,
       "status": "todo",
       "cat": "Gestión Ágil",
-      "title": "Ceremonia de seguimiento de proyectos SafeGRID (3)",
+      "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 3)",
       "resp": "Profesional Innovación",
       "sprint": "Sprint 4 (Abr)"
     },
@@ -396,7 +396,7 @@
       "id": 1767900269494,
       "status": "todo",
       "cat": "Gestión Ágil",
-      "title": "Ceremonia de seguimiento de proyectos SafeGRID (4)",
+      "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 4)",
       "resp": "Profesional Innovación",
       "sprint": "Sprint 4 (Abr)"
     },
@@ -404,7 +404,7 @@
       "id": 1767900269495,
       "status": "todo",
       "cat": "Herramientas",
-      "title": "Construcción de agente de IA normativo y de CRPE (para consultas)",
+      "title": "Construcción de agente de IA normativo y de CRPE (para consultas) en NotebookLM",
       "resp": "Profesional Innovación",
       "sprint": "Sprint 4 (Abr)"
     },
