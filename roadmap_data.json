@@ -186,7 +186,7 @@
     },
     {
       "id": 1767900269468,
-      "status": "todo",
+      "status": "doing",
       "cat": "Estudios",
       "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (Semana 1)",
       "resp": "Profesional Innovación",
@@ -487,6 +487,14 @@
       "resp": "Profesional Innovación/ Profesional Técnico Innovación",
       "title": "Reunión con Cartera para revisar tema de usuarios electrodependientes - SafeGRID",
       "sprint": "Sprint 2 (Feb)"
+    },
+    {
+      "id": 1770133645200,
+      "status": "doing",
+      "cat": "Gestión Ágil",
+      "resp": "Profesional Innovación/ Profesional Técnico Innovación",
+      "title": "Acompañamiento en la instalación del prototipo SafeGRID (Primeros 3 PMV Ciudad Rodeo)",
+      "sprint": "Sprint 1 (Ene)"
     }
   ],
   "sprints": [
