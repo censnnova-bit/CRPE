@@ -138,7 +138,7 @@
     },
     {
       "id": 1768585068087.3284,
-      "status": "doing",
+      "status": "done",
       "cat": "Gestión Ágil",
       "resp": "Profesional Innovación",
       "sprint": "Sprint 2 (Feb)",
@@ -218,7 +218,7 @@
     },
     {
       "id": 1767900269472,
-      "status": "doing",
+      "status": "done",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 1)",
       "resp": "Profesional Innovación",
@@ -493,7 +493,15 @@
       "status": "done",
       "cat": "Gestión Ágil",
       "resp": "Profesional Innovación/ Profesional Técnico Innovación",
-      "title": "Acompañamiento en la instalación del prototipo SafeGRID (Primeros 3 PMV Ciudad Rodeo)",
+      "title": "Acompañamiento en la instalación del prototipo SafeGRID (Primeros PMV Ciudad Rodeo)",
+      "sprint": "Sprint 2 (Feb)"
+    },
+    {
+      "id": 1770388351111,
+      "status": "doing",
+      "cat": "Comunicación",
+      "resp": "Profesional Innovación/ Profesional Técnico Innovación",
+      "title": "Preparación ficha técnica ANDESCO EE postulación SafeGRID",
       "sprint": "Sprint 2 (Feb)"
     }
   ],
