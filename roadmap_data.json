@@ -2,7 +2,7 @@
   "tasks": [
     {
       "id": 1767900269450,
-      "status": "todo",
+      "status": "doing",
       "cat": "Alineación",
       "title": "Sesión con gestora de comunicaciones CRPE",
       "resp": "Profesional Innovación",
@@ -10,7 +10,7 @@
     },
     {
       "id": 1767900269451,
-      "status": "todo",
+      "status": "doing",
       "cat": "Alineación",
       "title": "Sesión con líder control pérdidas",
       "resp": "Profesional Innovación",
@@ -18,7 +18,7 @@
     },
     {
       "id": 1767900269452,
-      "status": "todo",
+      "status": "doing",
       "cat": "Alineación",
       "title": "Sesión con gestores sociales CRPE",
       "resp": "Profesional Innovación",
@@ -146,7 +146,7 @@
     },
     {
       "id": 1768585068087.4675,
-      "status": "todo",
+      "status": "doing",
       "cat": "Gestión Ágil",
       "resp": "Profesional Innovación",
       "sprint": "Sprint 2 (Feb)",
@@ -170,7 +170,7 @@
     },
     {
       "id": 1767900269466,
-      "status": "todo",
+      "status": "doing",
       "cat": "Alineación",
       "title": "Sesión grupal con metodologías para alinear expectativas y tener feedback de valor",
       "resp": "Profesional Innovación",
@@ -178,7 +178,7 @@
     },
     {
       "id": 1767900269467,
-      "status": "todo",
+      "status": "doing",
       "cat": "Comunicación",
       "title": "Boletines internos sobre avances CRPE (Febrero)",
       "resp": "Profesional Innovación",
@@ -186,7 +186,7 @@
     },
     {
       "id": 1767900269468,
-      "status": "doing",
+      "status": "done",
       "cat": "Estudios",
       "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (Semana 1)",
       "resp": "Profesional Innovación",
@@ -194,7 +194,7 @@
     },
     {
       "id": 1767900269469,
-      "status": "todo",
+      "status": "doing",
       "cat": "Estudios",
       "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (Semana 2)",
       "resp": "Profesional Innovación",
@@ -226,7 +226,7 @@
     },
     {
       "id": 1767900269473,
-      "status": "todo",
+      "status": "doing",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 2)",
       "resp": "Profesional Innovación",
@@ -266,7 +266,7 @@
     },
     {
       "id": 1767900269478,
-      "status": "todo",
+      "status": "doing",
       "cat": "Vigilancia",
       "title": "Vigilancia tecnológica - CRPE",
       "resp": "Profesional Innovación",
@@ -274,7 +274,7 @@
     },
     {
       "id": 1767900269479,
-      "status": "todo",
+      "status": "doing",
       "cat": "Comunicación",
       "title": "Boletines internos sobre avances CRPE (Marzo)",
       "resp": "Profesional Innovación",
