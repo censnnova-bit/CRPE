@@ -154,7 +154,7 @@
     },
     {
       "id": 1768585068087.5488,
-      "status": "todo",
+      "status": "doing",
       "cat": "Gestión Ágil",
       "resp": "Profesional Innovación",
       "sprint": "Sprint 2 (Feb)",
@@ -202,7 +202,7 @@
     },
     {
       "id": 1767900269470,
-      "status": "todo",
+      "status": "doing",
       "cat": "Estudios",
       "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (Semana 3)",
       "resp": "Profesional Innovación",
@@ -234,7 +234,7 @@
     },
     {
       "id": 1767900269474,
-      "status": "todo",
+      "status": "doing",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 3)",
       "resp": "Profesional Innovación",
@@ -258,7 +258,7 @@
     },
     {
       "id": 1767900269477,
-      "status": "todo",
+      "status": "doing",
       "cat": "Herramientas",
       "title": "Testeo prototipos (materiales, transformadores, liquidaciones) (Semana 3 - 4)",
       "resp": "Profesional Innovación",
