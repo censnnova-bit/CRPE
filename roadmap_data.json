@@ -6,7 +6,7 @@
       "cat": "Alineación",
       "title": "Sesión con gestora de comunicaciones CRPE",
       "resp": "Profesional Innovación",
-      "sprint": "Sprint 2 (Feb)"
+      "sprint": "Sprint 3 (Mar)"
     },
     {
       "id": 1767900269451,
@@ -14,7 +14,7 @@
       "cat": "Alineación",
       "title": "Sesión con líder control pérdidas",
       "resp": "Profesional Innovación",
-      "sprint": "Sprint 2 (Feb)"
+      "sprint": "Sprint 3 (Mar)"
     },
     {
       "id": 1767900269452,
@@ -22,7 +22,7 @@
       "cat": "Alineación",
       "title": "Sesión con gestores sociales CRPE",
       "resp": "Profesional Innovación",
-      "sprint": "Sprint 2 (Feb)"
+      "sprint": "Sprint 3 (Mar)"
     },
     {
       "id": 1767900269453,
@@ -162,7 +162,7 @@
     },
     {
       "id": 1768585068087.4756,
-      "status": "doing",
+      "status": "done",
       "cat": "Gestión Ágil",
       "resp": "Profesional Innovación",
       "sprint": "Sprint 2 (Feb)",
@@ -174,7 +174,7 @@
       "cat": "Alineación",
       "title": "Sesión grupal con metodologías para alinear expectativas y tener feedback de valor",
       "resp": "Profesional Innovación",
-      "sprint": "Sprint 2 (Feb)"
+      "sprint": "Sprint 3 (Mar)"
     },
     {
       "id": 1767900269467,
@@ -210,7 +210,7 @@
     },
     {
       "id": 1767900269471,
-      "status": "doing",
+      "status": "done",
       "cat": "Estudios",
       "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (Semana 4)",
       "resp": "Profesional Innovación",
@@ -242,7 +242,7 @@
     },
     {
       "id": 1767900269475,
-      "status": "doing",
+      "status": "done",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 4)",
       "resp": "Profesional Innovación",
@@ -258,7 +258,7 @@
     },
     {
       "id": 1767900269477,
-      "status": "doing",
+      "status": "done",
       "cat": "Herramientas",
       "title": "Testeo prototipos (materiales, transformadores, liquidaciones) (Semana 3 - 4)",
       "resp": "Profesional Innovación",
@@ -274,7 +274,7 @@
     },
     {
       "id": 1767900269479,
-      "status": "doing",
+      "status": "todo",
       "cat": "Comunicación",
       "title": "Boletines internos sobre avances CRPE (Marzo)",
       "resp": "Profesional Innovación",
