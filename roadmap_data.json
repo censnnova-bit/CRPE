@@ -503,6 +503,38 @@
       "resp": "Profesional Innovación/ Profesional Técnico Innovación",
       "title": "Preparación ficha técnica ANDESCO EE postulación SafeGRID",
       "sprint": "Sprint 2 (Feb)"
+    },
+    {
+      "id": 1772570060313,
+      "status": "doing",
+      "cat": "Herramientas",
+      "resp": "Profesional Innovación",
+      "title": "Sesión testing MVP Materiales - detalle bugs y errores",
+      "sprint": "Sprint 3 (Mar)"
+    },
+    {
+      "id": 1772570106920,
+      "status": "doing",
+      "cat": "Herramientas",
+      "resp": "Profesional Innovación",
+      "title": "Sesión testing MVP Liquidaciones - detalle bugs y errores",
+      "sprint": "Sprint 3 (Mar)"
+    },
+    {
+      "id": 1772570154956,
+      "status": "doing",
+      "cat": "Herramientas",
+      "resp": "Profesional Innovación",
+      "title": "Sesión testing MVP Transformadores - detalle bugs y errores",
+      "sprint": "Sprint 3 (Mar)"
+    },
+    {
+      "id": 1772570522235,
+      "status": "doing",
+      "cat": "Gestión Ágil",
+      "resp": "Profesional Innovación/ Practicante FESC DevOps",
+      "title": "Acciones de cierre PBI - TG",
+      "sprint": "Sprint 3 (Mar)"
     }
   ],
   "sprints": [
