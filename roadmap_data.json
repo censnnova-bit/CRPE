@@ -362,7 +362,7 @@
     },
     {
       "id": 1767900269490,
-      "status": "todo",
+      "status": "doing",
       "cat": "Comunicación",
       "title": "Boletines internos sobre avances CRPE",
       "resp": "Profesional Innovación",
@@ -370,7 +370,7 @@
     },
     {
       "id": 1767900269491,
-      "status": "todo",
+      "status": "doing",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 1)",
       "resp": "Profesional Innovación",
@@ -378,7 +378,7 @@
     },
     {
       "id": 1767900269492,
-      "status": "todo",
+      "status": "doing",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 2)",
       "resp": "Profesional Innovación",
@@ -386,7 +386,7 @@
     },
     {
       "id": 1767900269493,
-      "status": "todo",
+      "status": "doing",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 3)",
       "resp": "Profesional Innovación",
@@ -394,7 +394,7 @@
     },
     {
       "id": 1767900269494,
-      "status": "todo",
+      "status": "doing",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 4)",
       "resp": "Profesional Innovación",
@@ -402,7 +402,7 @@
     },
     {
       "id": 1767900269495,
-      "status": "todo",
+      "status": "doing",
       "cat": "Herramientas",
       "title": "Construcción de agente de IA normativo y de CRPE (para consultas) en NotebookLM",
       "resp": "Profesional Innovación",
@@ -410,7 +410,7 @@
     },
     {
       "id": 1767900269496,
-      "status": "todo",
+      "status": "doing",
       "cat": "Vigilancia",
       "title": "Vigilancia tecnológica - CRPE",
       "resp": "Profesional Innovación",
@@ -535,6 +535,14 @@
       "resp": "Profesional Innovación/ Practicante FESC DevOps",
       "title": "Acciones de cierre PBI - TG",
       "sprint": "Sprint 3 (Mar)"
+    },
+    {
+      "id": 1775489628958,
+      "status": "doing",
+      "cat": "Herramientas",
+      "resp": "Profesional Innovación/ Practicante FESC DevOps",
+      "title": "Envío de feedback de testings a Innovaitors",
+      "sprint": "Sprint 4 (Abr)"
     }
   ],
   "sprints": [
