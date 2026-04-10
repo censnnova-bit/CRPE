@@ -370,7 +370,7 @@
     },
     {
       "id": 1767900269491,
-      "status": "doing",
+      "status": "done",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 1)",
       "resp": "Profesional Innovación",
@@ -543,6 +543,38 @@
       "resp": "Profesional Innovación/ Practicante FESC DevOps",
       "title": "Envío de feedback de testings a Innovaitors",
       "sprint": "Sprint 4 (Abr)"
+    },
+    {
+      "id": 1775828126396.9646,
+      "status": "doing",
+      "cat": "Estudios",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 4 (Abr)",
+      "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (Semana 1)"
+    },
+    {
+      "id": 1775828126396.8674,
+      "status": "todo",
+      "cat": "Estudios",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 4 (Abr)",
+      "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (Semana 2)"
+    },
+    {
+      "id": 1775828126396.6643,
+      "status": "todo",
+      "cat": "Estudios",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 4 (Abr)",
+      "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (Semana 3)"
+    },
+    {
+      "id": 1775828126396.1904,
+      "status": "todo",
+      "cat": "Estudios",
+      "resp": "Profesional Innovación",
+      "sprint": "Sprint 4 (Abr)",
+      "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (Semana 4)"
     }
   ],
   "sprints": [
