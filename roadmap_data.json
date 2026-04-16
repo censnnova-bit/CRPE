@@ -2,7 +2,7 @@
   "tasks": [
     {
       "id": 1767900269450,
-      "status": "doing",
+      "status": "done",
       "cat": "Alineación",
       "title": "Sesión con gestora de comunicaciones CRPE",
       "resp": "Profesional Innovación",
@@ -378,7 +378,7 @@
     },
     {
       "id": 1767900269492,
-      "status": "doing",
+      "status": "done",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 2)",
       "resp": "Profesional Innovación",
@@ -538,7 +538,7 @@
     },
     {
       "id": 1775489628958,
-      "status": "doing",
+      "status": "done",
       "cat": "Herramientas",
       "resp": "Profesional Innovación/ Practicante FESC DevOps",
       "title": "Envío de feedback de testings a Innovaitors",
@@ -554,7 +554,7 @@
     },
     {
       "id": 1775828126396.8674,
-      "status": "doing",
+      "status": "done",
       "cat": "Estudios",
       "resp": "Profesional Innovación",
       "sprint": "Sprint 4 (Abr)",
