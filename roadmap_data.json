@@ -2,7 +2,7 @@
   "tasks": [
     {
       "id": 1767900269001,
-      "status": "todo",
+      "status": "done",
       "cat": "Comunicación",
       "title": "Boletines internos sobre avances CRPE (Enero de 2026)",
       "resp": "Profesional P1 Innovación",
@@ -10,7 +10,7 @@
     },
     {
       "id": 1767900269002,
-      "status": "todo",
+      "status": "done",
       "cat": "Gestión Ágil",
       "title": "Ceremonias de seguimiento de proyectos - TG (Semana 1)",
       "resp": "Profesional P1 Innovación",
@@ -18,7 +18,7 @@
     },
     {
       "id": 1767900269003,
-      "status": "todo",
+      "status": "done",
       "cat": "Gestión Ágil",
       "title": "Ceremonias de seguimiento de proyectos - TG (Semana 2)",
       "resp": "Profesional P1 Innovación",
@@ -26,7 +26,7 @@
     },
     {
       "id": 1767900269004,
-      "status": "todo",
+      "status": "done",
       "cat": "Gestión Ágil",
       "title": "Ceremonias de seguimiento de proyectos - TG (Semana 3)",
       "resp": "Profesional P1 Innovación",
@@ -34,7 +34,7 @@
     },
     {
       "id": 1767900269005,
-      "status": "todo",
+      "status": "done",
       "cat": "Gestión Ágil",
       "title": "Ceremonias de seguimiento de proyectos - TG (Semana 4)",
       "resp": "Profesional P1 Innovación",
@@ -42,7 +42,7 @@
     },
     {
       "id": 1767900269006,
-      "status": "todo",
+      "status": "done",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 1)",
       "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
@@ -50,7 +50,7 @@
     },
     {
       "id": 1767900269007,
-      "status": "todo",
+      "status": "done",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 2)",
       "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
@@ -58,7 +58,7 @@
     },
     {
       "id": 1767900269008,
-      "status": "todo",
+      "status": "done",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 3)",
       "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
@@ -66,7 +66,7 @@
     },
     {
       "id": 1767900269009,
-      "status": "todo",
+      "status": "done",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 4)",
       "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
@@ -74,7 +74,7 @@
     },
     {
       "id": 17679002694010,
-      "status": "todo",
+      "status": "done",
       "cat": "Gestión Ágil",
       "title": "Reunión con innovaitors para revisión de backlog prototipos (materiales, transformadores, liquidaciones)",
       "resp": "Profesional P1 Innovación",
@@ -82,7 +82,7 @@
     },
     {
       "id": 1767900269011,
-      "status": "todo",
+      "status": "done",
       "cat": "Gestión Ágil",
       "title": "Revisión backlog prototipos (materiales, transformadores, liquidaciones) en Drive enviado por innovaitors",
       "resp": "Profesional P1 Innovación/Practicante Universitario DevOps",
@@ -90,7 +90,7 @@
     },
     {
       "id": 1767900269012,
-      "status": "todo",
+      "status": "done",
       "cat": "Herramientas",
       "title": "Testeo prototipos (materiales, transformadores, liquidaciones)",
       "resp": "Profesional P1 Innovación/Practicante Universitario DevOps",
@@ -98,7 +98,7 @@
     },
     {
       "id": 1767900269013,
-      "status": "todo",
+      "status": "done",
       "cat": "Alineación",
       "title": "Preparación socialización proyecto SafeGRID con enfoque en impactos y estrategias de respuesta ante reclamos",
       "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
@@ -106,7 +106,7 @@
     },
     {
       "id": 1767900269014,
-      "status": "todo",
+      "status": "done",
       "cat": "Alineación",
       "title": "Reunión de verificación de estrategia para safeGRID (desde lo legal y temas de multas)",
       "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
@@ -114,7 +114,7 @@
     },
     {
       "id": 1767900269015,
-      "status": "todo",
+      "status": "done",
       "cat": "Comunicación",
       "title": "Boletines internos sobre avances CRPE (Febrero de 2026)",
       "resp": "Profesional P1 Innovación",
@@ -122,7 +122,7 @@
     },
     {
       "id": 1767900269016,
-      "status": "todo",
+      "status": "done",
       "cat": "Alineación",
       "title": "Reunión con gestión social - impactos SafeGRID",
       "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
@@ -130,7 +130,7 @@
     },
     {
       "id": 1767900269017,
-      "status": "todo",
+      "status": "done",
       "cat": "Alineación",
       "title": "Reunión con Cartera para revisar tema de usuarios electrodependientes - SafeGRID",
       "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
@@ -138,7 +138,7 @@
     },
     {
       "id": 1767900269018,
-      "status": "todo",
+      "status": "done",
       "cat": "Gestión Ágil",
       "title": "Acompañamiento en la instalación del prototipo SafeGRID (Primer PMV Ciudad Rodeo)",
       "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
@@ -146,7 +146,7 @@
     },
     {
       "id": 1767900269019,
-      "status": "todo",
+      "status": "done",
       "cat": "Comunicación",
       "title": "Preparación ficha técnica ANDESCO EE postulación SafeGRID",
       "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
@@ -154,7 +154,7 @@
     },
     {
       "id": 1767900269020,
-      "status": "todo",
+      "status": "done",
       "cat": "Gestión Ágil",
       "title": "Ceremonias de seguimiento de proyectos - TG (Semana 1)",
       "resp": "Profesional P1 Innovación",
@@ -162,7 +162,7 @@
     },
     {
       "id": 1767900269021,
-      "status": "todo",
+      "status": "done",
       "cat": "Gestión Ágil",
       "title": "Ceremonias de seguimiento de proyectos - TG (Semana 2)",
       "resp": "Profesional P1 Innovación",
@@ -170,7 +170,7 @@
     },
     {
       "id": 1767900269022,
-      "status": "todo",
+      "status": "done",
       "cat": "Gestión Ágil",
       "title": "Ceremonias de seguimiento de proyectos - TG (Semana 3)",
       "resp": "Profesional P1 Innovación",
@@ -178,7 +178,7 @@
     },
     {
       "id": 1767900269023,
-      "status": "todo",
+      "status": "done",
       "cat": "Gestión Ágil",
       "title": "Ceremonias de seguimiento de proyectos - TG (Semana 4)",
       "resp": "Profesional P1 Innovación",
@@ -186,7 +186,7 @@
     },
     {
       "id": 1767900269024,
-      "status": "todo",
+      "status": "done",
       "cat": "Estudios",
       "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (Semana 1)",
       "resp": "Profesional P1 Innovación",
@@ -194,7 +194,7 @@
     },
     {
       "id": 1767900269025,
-      "status": "todo",
+      "status": "done",
       "cat": "Estudios",
       "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (Semana 2)",
       "resp": "Profesional P1 Innovación",
@@ -202,7 +202,7 @@
     },
     {
       "id": 1767900269026,
-      "status": "todo",
+      "status": "done",
       "cat": "Estudios",
       "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (Semana 3)",
       "resp": "Profesional P1 Innovación",
@@ -210,7 +210,7 @@
     },
     {
       "id": 1767900269027,
-      "status": "todo",
+      "status": "done",
       "cat": "Estudios",
       "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (Semana 4)",
       "resp": "Profesional P1 Innovación",
@@ -218,7 +218,7 @@
     },
     {
       "id": 1767900269028,
-      "status": "todo",
+      "status": "done",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 1)",
       "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
@@ -226,7 +226,7 @@
     },
     {
       "id": 1767900269029,
-      "status": "todo",
+      "status": "done",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 2)",
       "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
@@ -234,7 +234,7 @@
     },
     {
       "id": 1767900269030,
-      "status": "todo",
+      "status": "done",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 3)",
       "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
@@ -242,7 +242,7 @@
     },
     {
       "id": 1767900269031,
-      "status": "todo",
+      "status": "done",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 4)",
       "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
@@ -250,7 +250,7 @@
     },
     {
       "id": 1767900269032,
-      "status": "todo",
+      "status": "done",
       "cat": "Herramientas",
       "title": "Testeo prototipos (materiales, transformadores, liquidaciones) (Semana 1 - 2)",
       "resp": "Profesional P1 Innovación/Practicante Universitario DevOps",
@@ -258,7 +258,7 @@
     },
     {
       "id": 1767900269033,
-      "status": "todo",
+      "status": "done",
       "cat": "Herramientas",
       "title": "Testeo prototipos (materiales, transformadores, liquidaciones) (Semana 3 - 4)",
       "resp": "Profesional P1 Innovación/Practicante Universitario DevOps",
@@ -266,7 +266,7 @@
     },
     {
       "id": 1767900269034,
-      "status": "todo",
+      "status": "done",
       "cat": "Vigilancia",
       "title": "Vigilancia tecnológica - CRPE (Mes 1)",
       "resp": "Profesional P1 Innovación",
@@ -274,7 +274,7 @@
     },
     {
       "id": 1767900269035,
-      "status": "todo",
+      "status": "done",
       "cat": "Comunicación",
       "title": "Boletines internos sobre avances CRPE (Marzo de 2026)",
       "resp": "Profesional P1 Innovación",
@@ -282,7 +282,7 @@
     },
     {
       "id": 1767900269036,
-      "status": "todo",
+      "status": "done",
       "cat": "Alineación",
       "title": "Sesión con gestores sociales CRPE",
       "resp": "Profesional P1 Innovación",
@@ -290,7 +290,7 @@
     },
     {
       "id": 1767900269037,
-      "status": "todo",
+      "status": "done",
       "cat": "Estudios",
       "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (Semana 1)",
       "resp": "Profesional P1 Innovación",
@@ -298,7 +298,7 @@
     },
     {
       "id": 1767900269038,
-      "status": "todo",
+      "status": "done",
       "cat": "Estudios",
       "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (Semana 2)",
       "resp": "Profesional P1 Innovación",
@@ -306,7 +306,7 @@
     },
     {
       "id": 1767900269039,
-      "status": "todo",
+      "status": "done",
       "cat": "Estudios",
       "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (Semana 3)",
       "resp": "Profesional P1 Innovación",
@@ -314,7 +314,7 @@
     },
     {
       "id": 1767900269040,
-      "status": "todo",
+      "status": "done",
       "cat": "Estudios",
       "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (Semana 4)",
       "resp": "Profesional P1 Innovación",
@@ -322,7 +322,7 @@
     },
     {
       "id": 1767900269041,
-      "status": "todo",
+      "status": "done",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 1)",
       "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
@@ -330,7 +330,7 @@
     },
     {
       "id": 1767900269042,
-      "status": "todo",
+      "status": "done",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 2)",
       "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
@@ -338,7 +338,7 @@
     },
     {
       "id": 1767900269043,
-      "status": "todo",
+      "status": "done",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 3)",
       "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
@@ -346,7 +346,7 @@
     },
     {
       "id": 1767900269044,
-      "status": "todo",
+      "status": "done",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 4)",
       "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
@@ -354,7 +354,7 @@
     },
     {
       "id": 1767900269045,
-      "status": "todo",
+      "status": "done",
       "cat": "Vigilancia",
       "title": "Vigilancia tecnológica - CRPE (Mes 2)",
       "resp": "Profesional P1 Innovación",
@@ -362,7 +362,7 @@
     },
     {
       "id": 1767900269046,
-      "status": "todo",
+      "status": "done",
       "cat": "Herramientas",
       "title": "Sesión testing MVP Materiales - detalle bugs y errores",
       "resp": "Profesional P1 Innovación/Practicante Universitario DevOps",
@@ -370,7 +370,7 @@
     },
     {
       "id": 1767900269047,
-      "status": "todo",
+      "status": "done",
       "cat": "Herramientas",
       "title": "Sesión testing MVP Liquidaciones - detalle bugs y errores",
       "resp": "Profesional P1 Innovación/Practicante Universitario DevOps",
@@ -378,7 +378,7 @@
     },
     {
       "id": 1767900269048,
-      "status": "todo",
+      "status": "done",
       "cat": "Herramientas",
       "title": "Sesión testing MVP Transformadores - detalle bugs y errores",
       "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
@@ -386,7 +386,7 @@
     },
     {
       "id": 1767900269049,
-      "status": "todo",
+      "status": "done",
       "cat": "Gestión Ágil",
       "title": "Acciones de cierre PBI - TG - ajustes finales al BI",
       "resp": "Profesional P1 Innovación/Practicante Universitario DevOps",
@@ -394,7 +394,7 @@
     },
     {
       "id": 1767900269050,
-      "status": "todo",
+      "status": "doing",
       "cat": "Comunicación",
       "title": "Boletines internos sobre avances CRPE (Abril de 2026)",
       "resp": "Profesional P1 Innovación",
@@ -402,7 +402,7 @@
     },
     {
       "id": 1775489628951,
-      "status": "todo",
+      "status": "done",
       "cat": "Herramientas",
       "title": "Envío de feedback de testings a Innovaitors",
       "resp": "Profesional P1 Innovación/Practicante Universitario DevOps",
@@ -410,7 +410,7 @@
     },
     {
       "id": 1775489628952,
-      "status": "todo",
+      "status": "done",
       "cat": "Estudios",
       "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (Semana 1)",
       "resp": "Profesional P1 Innovación",
@@ -418,7 +418,7 @@
     },
     {
       "id": 1775489628953,
-      "status": "todo",
+      "status": "done",
       "cat": "Estudios",
       "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (Semana 2)",
       "resp": "Profesional P1 Innovación",
@@ -426,7 +426,7 @@
     },
     {
       "id": 1775489628954,
-      "status": "todo",
+      "status": "done",
       "cat": "Estudios",
       "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (Semana 3)",
       "resp": "Profesional P1 Innovación",
@@ -434,7 +434,7 @@
     },
     {
       "id": 1775489628955,
-      "status": "todo",
+      "status": "doing",
       "cat": "Estudios",
       "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (Semana 4)",
       "resp": "Profesional P1 Innovación",
@@ -442,7 +442,7 @@
     },
     {
       "id": 1775489628956,
-      "status": "todo",
+      "status": "done",
       "cat": "Alineación",
       "title": "Sesión con gestora de comunicaciones CRPE - alineación de expectativas",
       "resp": "Profesional P1 Innovación",
@@ -450,7 +450,7 @@
     },
     {
       "id": 1775489628957,
-      "status": "todo",
+      "status": "doing",
       "cat": "Alineación",
       "title": "Sesión con gestora de comunicaciones + Contact Center - alineación de expectativas",
       "resp": "Profesional P1 Innovación/Practicante Universitario DevOps",
@@ -458,7 +458,7 @@
     },
     {
       "id": 1775489628958,
-      "status": "todo",
+      "status": "done",
       "cat": "Alineación",
       "title": "Sesión con gestora de comunicaciones y coordinadora de canales - alcance apoyo DevOps de innovación",
       "resp": "Profesional P1 Innovación/Practicante Universitario DevOps",
@@ -466,7 +466,7 @@
     },
     {
       "id": 1775489628959,
-      "status": "todo",
+      "status": "done",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 1)",
       "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
@@ -474,7 +474,7 @@
     },
     {
       "id": 1775489628960,
-      "status": "todo",
+      "status": "done",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 2)",
       "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
@@ -482,7 +482,7 @@
     },
     {
       "id": 1775489628961,
-      "status": "todo",
+      "status": "done",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 3)",
       "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
@@ -490,7 +490,7 @@
     },
     {
       "id": 1775489628962,
-      "status": "todo",
+      "status": "doing",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 4)",
       "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
@@ -498,7 +498,7 @@
     },
     {
       "id": 1775489628963,
-      "status": "todo",
+      "status": "done",
       "cat": "Herramientas",
       "title": "Construcción de agente de IA normativo y de CRPE (para consultas) en NotebookLM con enlace público para cualquier persona de CENS que quiera estudiar",
       "resp": "Profesional P1 Innovación",
@@ -506,7 +506,7 @@
     },
     {
       "id": 1775489628964,
-      "status": "todo",
+      "status": "done",
       "cat": "Vigilancia",
       "title": "Vigilancia tecnológica - CRPE (Mes 3)",
       "resp": "Profesional P1 Innovación",
