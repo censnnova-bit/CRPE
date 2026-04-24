@@ -1,595 +1,723 @@
 {
   "tasks": [
     {
-      "id": 1767900269450,
-      "status": "done",
-      "cat": "Alineación",
-      "title": "Sesión con gestora de comunicaciones CRPE",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 4 (Abr)"
-    },
-    {
-      "id": 1767900269451,
-      "status": "doing",
-      "cat": "Alineación",
-      "title": "Sesión con líder control pérdidas",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 4 (Abr)"
-    },
-    {
-      "id": 1767900269452,
-      "status": "done",
-      "cat": "Alineación",
-      "title": "Sesión con gestores sociales CRPE",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 3 (Mar)"
-    },
-    {
-      "id": 1767900269453,
-      "status": "done",
+      "id": 1767900269001,
+      "status": "todo",
       "cat": "Comunicación",
-      "title": "Boletines internos sobre avances CRPE (Enero)",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 1 (Ene)"
+      "title": "Boletines internos sobre avances CRPE (Enero de 2026)",
+      "resp": "Profesional P1 Innovación",
+      "sprint": "Sprint 1 (Ene 2026)"
     },
     {
-      "id": 1767900269454,
-      "status": "done",
+      "id": 1767900269002,
+      "status": "todo",
       "cat": "Gestión Ágil",
       "title": "Ceremonias de seguimiento de proyectos - TG (Semana 1)",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 1 (Ene)"
+      "resp": "Profesional P1 Innovación",
+      "sprint": "Sprint 1 (Ene 2026)"
     },
     {
-      "id": 1767900269455,
-      "status": "done",
+      "id": 1767900269003,
+      "status": "todo",
       "cat": "Gestión Ágil",
       "title": "Ceremonias de seguimiento de proyectos - TG (Semana 2)",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 1 (Ene)"
+      "resp": "Profesional P1 Innovación",
+      "sprint": "Sprint 1 (Ene 2026)"
     },
     {
-      "id": 1767900269456,
-      "status": "done",
+      "id": 1767900269004,
+      "status": "todo",
       "cat": "Gestión Ágil",
       "title": "Ceremonias de seguimiento de proyectos - TG (Semana 3)",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 1 (Ene)"
+      "resp": "Profesional P1 Innovación",
+      "sprint": "Sprint 1 (Ene 2026)"
     },
     {
-      "id": 1767900269457,
-      "status": "done",
+      "id": 1767900269005,
+      "status": "todo",
       "cat": "Gestión Ágil",
       "title": "Ceremonias de seguimiento de proyectos - TG (Semana 4)",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 1 (Ene)"
+      "resp": "Profesional P1 Innovación",
+      "sprint": "Sprint 1 (Ene 2026)"
     },
     {
-      "id": 1767900269458,
-      "status": "done",
+      "id": 1767900269006,
+      "status": "todo",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 1)",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 1 (Ene)"
+      "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
+      "sprint": "Sprint 1 (Ene 2026)"
     },
     {
-      "id": 1767900269459,
-      "status": "done",
+      "id": 1767900269007,
+      "status": "todo",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 2)",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 1 (Ene)"
+      "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
+      "sprint": "Sprint 1 (Ene 2026)"
     },
     {
-      "id": 1767900269460,
-      "status": "done",
+      "id": 1767900269008,
+      "status": "todo",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 3)",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 1 (Ene)"
+      "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
+      "sprint": "Sprint 1 (Ene 2026)"
     },
     {
-      "id": 1767900269461,
-      "status": "done",
+      "id": 1767900269009,
+      "status": "todo",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 4)",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 1 (Ene)"
+      "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
+      "sprint": "Sprint 1 (Ene 2026)"
     },
     {
-      "id": 1767900269462,
-      "status": "done",
+      "id": 17679002694010,
+      "status": "todo",
       "cat": "Gestión Ágil",
       "title": "Reunión con innovaitors para revisión de backlog prototipos (materiales, transformadores, liquidaciones)",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 1 (Ene)"
+      "resp": "Profesional P1 Innovación",
+      "sprint": "Sprint 1 (Ene 2026)"
     },
     {
-      "id": 1767900269463,
-      "status": "done",
+      "id": 1767900269011,
+      "status": "todo",
       "cat": "Gestión Ágil",
       "title": "Revisión backlog prototipos (materiales, transformadores, liquidaciones) en Drive enviado por innovaitors",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 1 (Ene)"
+      "resp": "Profesional P1 Innovación/Practicante Universitario DevOps",
+      "sprint": "Sprint 1 (Ene 2026)"
     },
     {
-      "id": 1767900269464,
-      "status": "done",
+      "id": 1767900269012,
+      "status": "todo",
       "cat": "Herramientas",
       "title": "Testeo prototipos (materiales, transformadores, liquidaciones)",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 1 (Ene)"
+      "resp": "Profesional P1 Innovación/Practicante Universitario DevOps",
+      "sprint": "Sprint 1 (Ene 2026)"
     },
     {
-      "id": 1767900269465,
-      "status": "done",
+      "id": 1767900269013,
+      "status": "todo",
       "cat": "Alineación",
       "title": "Preparación socialización proyecto SafeGRID con enfoque en impactos y estrategias de respuesta ante reclamos",
-      "resp": "Profesional Innovación/ Profesional Técnico Innovación",
-      "sprint": "Sprint 1 (Ene)"
+      "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
+      "sprint": "Sprint 1 (Ene 2026)"
     },
     {
-      "id": 1768514127044.077,
-      "status": "done",
+      "id": 1767900269014,
+      "status": "todo",
       "cat": "Alineación",
-      "resp": "Profesional Innovación/ Profesional Técnico Innovación",
-      "sprint": "Sprint 1 (Ene)",
-      "title": "Reunión de verificación de estrategia para safeGRID (desde lo legal y temas de multas)"
+      "title": "Reunión de verificación de estrategia para safeGRID (desde lo legal y temas de multas)",
+      "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
+      "sprint": "Sprint 1 (Ene 2026)"
     },
     {
-      "id": 1768585068087.3284,
-      "status": "done",
-      "cat": "Gestión Ágil",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 2 (Feb)",
-      "title": "Ceremonias de seguimiento de proyectos - TG (Semana 1)"
-    },
-    {
-      "id": 1768585068087.4675,
-      "status": "done",
-      "cat": "Gestión Ágil",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 2 (Feb)",
-      "title": "Ceremonias de seguimiento de proyectos - TG (Semana 2)"
-    },
-    {
-      "id": 1768585068087.5488,
-      "status": "done",
-      "cat": "Gestión Ágil",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 2 (Feb)",
-      "title": "Ceremonias de seguimiento de proyectos - TG (Semana 3)"
-    },
-    {
-      "id": 1768585068087.4756,
-      "status": "done",
-      "cat": "Gestión Ágil",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 2 (Feb)",
-      "title": "Ceremonias de seguimiento de proyectos - TG (Semana 4)"
-    },
-    {
-      "id": 1767900269466,
-      "status": "doing",
-      "cat": "Alineación",
-      "title": "Sesión grupal con metodologías para alinear expectativas y tener feedback de valor",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 4 (Abr)"
-    },
-    {
-      "id": 1767900269467,
-      "status": "done",
+      "id": 1767900269015,
+      "status": "todo",
       "cat": "Comunicación",
-      "title": "Boletines internos sobre avances CRPE (Febrero)",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 2 (Feb)"
+      "title": "Boletines internos sobre avances CRPE (Febrero de 2026)",
+      "resp": "Profesional P1 Innovación",
+      "sprint": "Sprint 2 (Feb 2026)"
     },
     {
-      "id": 1767900269468,
-      "status": "done",
+      "id": 1767900269016,
+      "status": "todo",
+      "cat": "Alineación",
+      "title": "Reunión con gestión social - impactos SafeGRID",
+      "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
+      "sprint": "Sprint 2 (Feb 2026)"
+    },
+    {
+      "id": 1767900269017,
+      "status": "todo",
+      "cat": "Alineación",
+      "title": "Reunión con Cartera para revisar tema de usuarios electrodependientes - SafeGRID",
+      "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
+      "sprint": "Sprint 2 (Feb 2026)"
+    },
+    {
+      "id": 1767900269018,
+      "status": "todo",
+      "cat": "Gestión Ágil",
+      "title": "Acompañamiento en la instalación del prototipo SafeGRID (Primer PMV Ciudad Rodeo)",
+      "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
+      "sprint": "Sprint 2 (Feb 2026)"
+    },
+    {
+      "id": 1767900269019,
+      "status": "todo",
+      "cat": "Comunicación",
+      "title": "Preparación ficha técnica ANDESCO EE postulación SafeGRID",
+      "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
+      "sprint": "Sprint 2 (Feb 2026)"
+    },
+    {
+      "id": 1767900269020,
+      "status": "todo",
+      "cat": "Gestión Ágil",
+      "title": "Ceremonias de seguimiento de proyectos - TG (Semana 1)",
+      "resp": "Profesional P1 Innovación",
+      "sprint": "Sprint 2 (Feb 2026)"
+    },
+    {
+      "id": 1767900269021,
+      "status": "todo",
+      "cat": "Gestión Ágil",
+      "title": "Ceremonias de seguimiento de proyectos - TG (Semana 2)",
+      "resp": "Profesional P1 Innovación",
+      "sprint": "Sprint 2 (Feb 2026)"
+    },
+    {
+      "id": 1767900269022,
+      "status": "todo",
+      "cat": "Gestión Ágil",
+      "title": "Ceremonias de seguimiento de proyectos - TG (Semana 3)",
+      "resp": "Profesional P1 Innovación",
+      "sprint": "Sprint 2 (Feb 2026)"
+    },
+    {
+      "id": 1767900269023,
+      "status": "todo",
+      "cat": "Gestión Ágil",
+      "title": "Ceremonias de seguimiento de proyectos - TG (Semana 4)",
+      "resp": "Profesional P1 Innovación",
+      "sprint": "Sprint 2 (Feb 2026)"
+    },
+    {
+      "id": 1767900269024,
+      "status": "todo",
       "cat": "Estudios",
       "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (Semana 1)",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 2 (Feb)"
+      "resp": "Profesional P1 Innovación",
+      "sprint": "Sprint 2 (Feb 2026)"
     },
     {
-      "id": 1767900269469,
-      "status": "done",
+      "id": 1767900269025,
+      "status": "todo",
       "cat": "Estudios",
       "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (Semana 2)",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 2 (Feb)"
+      "resp": "Profesional P1 Innovación",
+      "sprint": "Sprint 2 (Feb 2026)"
     },
     {
-      "id": 1767900269470,
-      "status": "done",
+      "id": 1767900269026,
+      "status": "todo",
       "cat": "Estudios",
       "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (Semana 3)",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 2 (Feb)"
+      "resp": "Profesional P1 Innovación",
+      "sprint": "Sprint 2 (Feb 2026)"
     },
     {
-      "id": 1767900269471,
-      "status": "done",
+      "id": 1767900269027,
+      "status": "todo",
       "cat": "Estudios",
       "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (Semana 4)",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 2 (Feb)"
+      "resp": "Profesional P1 Innovación",
+      "sprint": "Sprint 2 (Feb 2026)"
     },
     {
-      "id": 1767900269472,
-      "status": "done",
+      "id": 1767900269028,
+      "status": "todo",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 1)",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 2 (Feb)"
+      "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
+      "sprint": "Sprint 2 (Feb 2026)"
     },
     {
-      "id": 1767900269473,
-      "status": "done",
+      "id": 1767900269029,
+      "status": "todo",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 2)",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 2 (Feb)"
+      "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
+      "sprint": "Sprint 2 (Feb 2026)"
     },
     {
-      "id": 1767900269474,
-      "status": "done",
+      "id": 1767900269030,
+      "status": "todo",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 3)",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 2 (Feb)"
+      "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
+      "sprint": "Sprint 2 (Feb 2026)"
     },
     {
-      "id": 1767900269475,
-      "status": "done",
+      "id": 1767900269031,
+      "status": "todo",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 4)",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 2 (Feb)"
+      "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
+      "sprint": "Sprint 2 (Feb 2026)"
     },
     {
-      "id": 1767900269476,
-      "status": "done",
+      "id": 1767900269032,
+      "status": "todo",
       "cat": "Herramientas",
       "title": "Testeo prototipos (materiales, transformadores, liquidaciones) (Semana 1 - 2)",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 2 (Feb)"
+      "resp": "Profesional P1 Innovación/Practicante Universitario DevOps",
+      "sprint": "Sprint 2 (Feb 2026)"
     },
     {
-      "id": 1767900269477,
-      "status": "done",
+      "id": 1767900269033,
+      "status": "todo",
       "cat": "Herramientas",
       "title": "Testeo prototipos (materiales, transformadores, liquidaciones) (Semana 3 - 4)",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 2 (Feb)"
+      "resp": "Profesional P1 Innovación/Practicante Universitario DevOps",
+      "sprint": "Sprint 2 (Feb 2026)"
     },
     {
-      "id": 1767900269478,
-      "status": "done",
+      "id": 1767900269034,
+      "status": "todo",
       "cat": "Vigilancia",
-      "title": "Vigilancia tecnológica - CRPE",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 2 (Feb)"
+      "title": "Vigilancia tecnológica - CRPE (Mes 1)",
+      "resp": "Profesional P1 Innovación",
+      "sprint": "Sprint 2 (Feb 2026)"
     },
     {
-      "id": 1767900269479,
-      "status": "done",
+      "id": 1767900269035,
+      "status": "todo",
       "cat": "Comunicación",
-      "title": "Boletines internos sobre avances CRPE (Marzo)",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 3 (Mar)"
+      "title": "Boletines internos sobre avances CRPE (Marzo de 2026)",
+      "resp": "Profesional P1 Innovación",
+      "sprint": "Sprint 3 (Mar 2026)"
     },
     {
-      "id": 1767900269480,
-      "status": "done",
-      "cat": "Comunicación",
-      "title": "Informe de avances trimestal",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 3 (Mar)"
+      "id": 1767900269036,
+      "status": "todo",
+      "cat": "Alineación",
+      "title": "Sesión con gestores sociales CRPE",
+      "resp": "Profesional P1 Innovación",
+      "sprint": "Sprint 3 (Mar 2026)"
     },
     {
-      "id": 1767900269481,
-      "status": "done",
+      "id": 1767900269037,
+      "status": "todo",
       "cat": "Estudios",
       "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (Semana 1)",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 3 (Mar)"
+      "resp": "Profesional P1 Innovación",
+      "sprint": "Sprint 3 (Mar 2026)"
     },
     {
-      "id": 1767900269482,
-      "status": "done",
+      "id": 1767900269038,
+      "status": "todo",
       "cat": "Estudios",
       "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (Semana 2)",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 3 (Mar)"
+      "resp": "Profesional P1 Innovación",
+      "sprint": "Sprint 3 (Mar 2026)"
     },
     {
-      "id": 1767900269483,
-      "status": "done",
+      "id": 1767900269039,
+      "status": "todo",
       "cat": "Estudios",
       "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (Semana 3)",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 3 (Mar)"
+      "resp": "Profesional P1 Innovación",
+      "sprint": "Sprint 3 (Mar 2026)"
     },
     {
-      "id": 1767900269484,
-      "status": "done",
+      "id": 1767900269040,
+      "status": "todo",
       "cat": "Estudios",
       "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (Semana 4)",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 3 (Mar)"
+      "resp": "Profesional P1 Innovación",
+      "sprint": "Sprint 3 (Mar 2026)"
     },
     {
-      "id": 1767900269485,
-      "status": "done",
+      "id": 1767900269041,
+      "status": "todo",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 1)",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 3 (Mar)"
+      "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
+      "sprint": "Sprint 3 (Mar 2026)"
     },
     {
-      "id": 1767900269486,
-      "status": "done",
+      "id": 1767900269042,
+      "status": "todo",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 2)",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 3 (Mar)"
+      "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
+      "sprint": "Sprint 3 (Mar 2026)"
     },
     {
-      "id": 1767900269487,
-      "status": "done",
+      "id": 1767900269043,
+      "status": "todo",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 3)",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 3 (Mar)"
+      "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
+      "sprint": "Sprint 3 (Mar 2026)"
     },
     {
-      "id": 1767900269488,
-      "status": "done",
+      "id": 1767900269044,
+      "status": "todo",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 4)",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 3 (Mar)"
+      "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
+      "sprint": "Sprint 3 (Mar 2026)"
     },
     {
-      "id": 1767900269489,
-      "status": "done",
+      "id": 1767900269045,
+      "status": "todo",
       "cat": "Vigilancia",
-      "title": "Vigilancia tecnológica - CRPE",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 3 (Mar)"
+      "title": "Vigilancia tecnológica - CRPE (Mes 2)",
+      "resp": "Profesional P1 Innovación",
+      "sprint": "Sprint 3 (Mar 2026)"
     },
     {
-      "id": 1767900269490,
-      "status": "doing",
-      "cat": "Comunicación",
-      "title": "Boletines internos sobre avances CRPE",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 4 (Abr)"
-    },
-    {
-      "id": 1767900269491,
-      "status": "done",
-      "cat": "Gestión Ágil",
-      "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 1)",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 4 (Abr)"
-    },
-    {
-      "id": 1767900269492,
-      "status": "done",
-      "cat": "Gestión Ágil",
-      "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 2)",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 4 (Abr)"
-    },
-    {
-      "id": 1767900269493,
-      "status": "done",
-      "cat": "Gestión Ágil",
-      "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 3)",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 4 (Abr)"
-    },
-    {
-      "id": 1767900269494,
-      "status": "doing",
-      "cat": "Gestión Ágil",
-      "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 4)",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 4 (Abr)"
-    },
-    {
-      "id": 1767900269495,
-      "status": "done",
+      "id": 1767900269046,
+      "status": "todo",
       "cat": "Herramientas",
-      "title": "Construcción de agente de IA normativo y de CRPE (para consultas) en NotebookLM",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 4 (Abr)"
-    },
-    {
-      "id": 1767900269496,
-      "status": "doing",
-      "cat": "Vigilancia",
-      "title": "Vigilancia tecnológica - CRPE",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 4 (Abr)"
-    },
-    {
-      "id": 1767900269497,
-      "status": "todo",
-      "cat": "Comunicación",
-      "title": "Boletines internos sobre avances CRPE",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 5 (May)"
-    },
-    {
-      "id": 1767900269498,
-      "status": "todo",
-      "cat": "Estudios",
-      "title": "Análisis estado CRPE en Colombia",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 5 (May)"
-    },
-    {
-      "id": 1767900269499,
-      "status": "todo",
-      "cat": "Vigilancia",
-      "title": "Vigilancia tecnológica - CRPE",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 5 (May)"
-    },
-    {
-      "id": 1767900269500,
-      "status": "todo",
-      "cat": "Comunicación",
-      "title": "Boletines internos sobre avances CRPE",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 6 (Jun)"
-    },
-    {
-      "id": 1767900269501,
-      "status": "todo",
-      "cat": "Comunicación",
-      "title": "Informe de avances trimestal",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 6 (Jun)"
-    },
-    {
-      "id": 1767900269502,
-      "status": "todo",
-      "cat": "Estudios",
-      "title": "Análisis estado CRPE en Colombia",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 6 (Jun)"
-    },
-    {
-      "id": 1767900269503,
-      "status": "todo",
-      "cat": "Vigilancia",
-      "title": "Vigilancia tecnológica - CRPE",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 6 (Jun)"
-    },
-    {
-      "id": 1769604162455,
-      "status": "done",
-      "cat": "Alineación",
-      "resp": "Profesional Innovación/ Profesional Técnico Innovación",
-      "title": "Reunión con gestión social - impactos SafeGRID",
-      "sprint": "Sprint 2 (Feb)"
-    },
-    {
-      "id": 1769604193327,
-      "status": "done",
-      "cat": "Alineación",
-      "resp": "Profesional Innovación/ Profesional Técnico Innovación",
-      "title": "Reunión con Cartera para revisar tema de usuarios electrodependientes - SafeGRID",
-      "sprint": "Sprint 2 (Feb)"
-    },
-    {
-      "id": 1770133645200,
-      "status": "done",
-      "cat": "Gestión Ágil",
-      "resp": "Profesional Innovación/ Profesional Técnico Innovación",
-      "title": "Acompañamiento en la instalación del prototipo SafeGRID (Primeros PMV Ciudad Rodeo)",
-      "sprint": "Sprint 2 (Feb)"
-    },
-    {
-      "id": 1770388351111,
-      "status": "done",
-      "cat": "Comunicación",
-      "resp": "Profesional Innovación/ Profesional Técnico Innovación",
-      "title": "Preparación ficha técnica ANDESCO EE postulación SafeGRID",
-      "sprint": "Sprint 2 (Feb)"
-    },
-    {
-      "id": 1772570060313,
-      "status": "done",
-      "cat": "Herramientas",
-      "resp": "Profesional Innovación",
       "title": "Sesión testing MVP Materiales - detalle bugs y errores",
-      "sprint": "Sprint 3 (Mar)"
+      "resp": "Profesional P1 Innovación/Practicante Universitario DevOps",
+      "sprint": "Sprint 3 (Mar 2026)"
     },
     {
-      "id": 1772570106920,
-      "status": "done",
+      "id": 1767900269047,
+      "status": "todo",
       "cat": "Herramientas",
-      "resp": "Profesional Innovación",
       "title": "Sesión testing MVP Liquidaciones - detalle bugs y errores",
-      "sprint": "Sprint 3 (Mar)"
+      "resp": "Profesional P1 Innovación/Practicante Universitario DevOps",
+      "sprint": "Sprint 3 (Mar 2026)"
     },
     {
-      "id": 1772570154956,
-      "status": "done",
+      "id": 1767900269048,
+      "status": "todo",
       "cat": "Herramientas",
-      "resp": "Profesional Innovación",
       "title": "Sesión testing MVP Transformadores - detalle bugs y errores",
-      "sprint": "Sprint 3 (Mar)"
+      "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
+      "sprint": "Sprint 3 (Mar 2026)"
     },
     {
-      "id": 1772570522235,
-      "status": "done",
+      "id": 1767900269049,
+      "status": "todo",
       "cat": "Gestión Ágil",
-      "resp": "Profesional Innovación/ Practicante FESC DevOps",
-      "title": "Acciones de cierre PBI - TG",
-      "sprint": "Sprint 3 (Mar)"
+      "title": "Acciones de cierre PBI - TG - ajustes finales al BI",
+      "resp": "Profesional P1 Innovación/Practicante Universitario DevOps",
+      "sprint": "Sprint 3 (Mar 2026)"
+    },
+    {
+      "id": 1767900269050,
+      "status": "todo",
+      "cat": "Comunicación",
+      "title": "Boletines internos sobre avances CRPE (Abril de 2026)",
+      "resp": "Profesional P1 Innovación",
+      "sprint": "Sprint 4 (Abr 2026)"
+    },
+    {
+      "id": 1775489628951,
+      "status": "todo",
+      "cat": "Herramientas",
+      "title": "Envío de feedback de testings a Innovaitors",
+      "resp": "Profesional P1 Innovación/Practicante Universitario DevOps",
+      "sprint": "Sprint 4 (Abr 2026)"
+    },
+    {
+      "id": 1775489628952,
+      "status": "todo",
+      "cat": "Estudios",
+      "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (Semana 1)",
+      "resp": "Profesional P1 Innovación",
+      "sprint": "Sprint 4 (Abr 2026)"
+    },
+    {
+      "id": 1775489628953,
+      "status": "todo",
+      "cat": "Estudios",
+      "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (Semana 2)",
+      "resp": "Profesional P1 Innovación",
+      "sprint": "Sprint 4 (Abr 2026)"
+    },
+    {
+      "id": 1775489628954,
+      "status": "todo",
+      "cat": "Estudios",
+      "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (Semana 3)",
+      "resp": "Profesional P1 Innovación",
+      "sprint": "Sprint 4 (Abr 2026)"
+    },
+    {
+      "id": 1775489628955,
+      "status": "todo",
+      "cat": "Estudios",
+      "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (Semana 4)",
+      "resp": "Profesional P1 Innovación",
+      "sprint": "Sprint 4 (Abr 2026)"
+    },
+    {
+      "id": 1775489628956,
+      "status": "todo",
+      "cat": "Alineación",
+      "title": "Sesión con gestora de comunicaciones CRPE - alineación de expectativas",
+      "resp": "Profesional P1 Innovación",
+      "sprint": "Sprint 4 (Abr 2026)"
+    },
+    {
+      "id": 1775489628957,
+      "status": "todo",
+      "cat": "Alineación",
+      "title": "Sesión con gestora de comunicaciones + Contact Center - alineación de expectativas",
+      "resp": "Profesional P1 Innovación/Practicante Universitario DevOps",
+      "sprint": "Sprint 4 (Abr 2026)"
     },
     {
       "id": 1775489628958,
-      "status": "done",
+      "status": "todo",
+      "cat": "Alineación",
+      "title": "Sesión con gestora de comunicaciones y coordinadora de canales - alcance apoyo DevOps de innovación",
+      "resp": "Profesional P1 Innovación/Practicante Universitario DevOps",
+      "sprint": "Sprint 4 (Abr 2026)"
+    },
+    {
+      "id": 1775489628959,
+      "status": "todo",
+      "cat": "Gestión Ágil",
+      "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 1)",
+      "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
+      "sprint": "Sprint 4 (Abr 2026)"
+    },
+    {
+      "id": 1775489628960,
+      "status": "todo",
+      "cat": "Gestión Ágil",
+      "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 2)",
+      "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
+      "sprint": "Sprint 4 (Abr 2026)"
+    },
+    {
+      "id": 1775489628961,
+      "status": "todo",
+      "cat": "Gestión Ágil",
+      "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 3)",
+      "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
+      "sprint": "Sprint 4 (Abr 2026)"
+    },
+    {
+      "id": 1775489628962,
+      "status": "todo",
+      "cat": "Gestión Ágil",
+      "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 4)",
+      "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
+      "sprint": "Sprint 4 (Abr 2026)"
+    },
+    {
+      "id": 1775489628963,
+      "status": "todo",
       "cat": "Herramientas",
-      "resp": "Profesional Innovación/ Practicante FESC DevOps",
-      "title": "Envío de feedback de testings a Innovaitors",
-      "sprint": "Sprint 4 (Abr)"
+      "title": "Construcción de agente de IA normativo y de CRPE (para consultas) en NotebookLM con enlace público para cualquier persona de CENS que quiera estudiar",
+      "resp": "Profesional P1 Innovación",
+      "sprint": "Sprint 4 (Abr 2026)"
     },
     {
-      "id": 1775828126396.9646,
-      "status": "done",
-      "cat": "Estudios",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 4 (Abr)",
-      "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (Semana 1)"
+      "id": 1775489628964,
+      "status": "todo",
+      "cat": "Vigilancia",
+      "title": "Vigilancia tecnológica - CRPE (Mes 3)",
+      "resp": "Profesional P1 Innovación",
+      "sprint": "Sprint 4 (Abr 2026)"
     },
     {
-      "id": 1775828126396.8674,
-      "status": "done",
-      "cat": "Estudios",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 4 (Abr)",
-      "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (Semana 2)"
+      "id": 1775489628965,
+      "status": "todo",
+      "cat": "Alineación",
+      "title": "Sesión con líder control pérdidas - revisión avances desde CENSNNOVA y alineación de expectativas",
+      "resp": "Profesional P1 Innovación",
+      "sprint": "Sprint 5 (May 2026)"
     },
     {
-      "id": 1775828126396.6643,
-      "status": "done",
-      "cat": "Estudios",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 4 (Abr)",
-      "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (Semana 3)"
+      "id": 1775489628966,
+      "status": "todo",
+      "cat": "Comunicación",
+      "title": "Boletines internos sobre avances CRPE (Mayo de 2026)",
+      "resp": "Profesional P1 Innovación",
+      "sprint": "Sprint 5 (May 2026)"
     },
     {
-      "id": 1775828126396.1904,
-      "status": "doing",
+      "id": 1775489628967,
+      "status": "todo",
       "cat": "Estudios",
-      "resp": "Profesional Innovación",
-      "sprint": "Sprint 4 (Abr)",
-      "title": "Estudios sobre norma técnica asociada al core del negocio (remuneración y CRPE) (Semana 4)"
+      "title": "Análisis estado CRPE en Colombia - investigación apalancada en motores de Perplexity AI Pro",
+      "resp": "Profesional P1 Innovación",
+      "sprint": "Sprint 5 (May 2026)"
+    },
+    {
+      "id": 1775489628968,
+      "status": "todo",
+      "cat": "Vigilancia",
+      "title": "Vigilancia tecnológica - CRPE (Mes 4)",
+      "resp": "Profesional P1 Innovación",
+      "sprint": "Sprint 5 (May 2026)"
+    },
+    {
+      "id": 1775489628969,
+      "status": "todo",
+      "cat": "Gestión Ágil",
+      "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 1)",
+      "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
+      "sprint": "Sprint 5 (May 2026)"
+    },
+    {
+      "id": 1775489628970,
+      "status": "todo",
+      "cat": "Gestión Ágil",
+      "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 2)",
+      "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
+      "sprint": "Sprint 5 (May 2026)"
+    },
+    {
+      "id": 1775489628971,
+      "status": "todo",
+      "cat": "Gestión Ágil",
+      "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 3)",
+      "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
+      "sprint": "Sprint 5 (May 2026)"
+    },
+    {
+      "id": 1775489628972,
+      "status": "todo",
+      "cat": "Gestión Ágil",
+      "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 4)",
+      "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
+      "sprint": "Sprint 5 (May 2026)"
+    },
+    {
+      "id": 1775489628973,
+      "status": "todo",
+      "cat": "Herramientas",
+      "title": "Ciclo de refactorización de prototipos PMV (Materiales, Transformadores, Liquidaciones) - (Semana 1)",
+      "resp": "Profesional P1 Innovación/Practicante Universitario DevOps",
+      "sprint": "Sprint 5 (May 2026)"
+    },
+    {
+      "id": 1775489628974,
+      "status": "todo",
+      "cat": "Herramientas",
+      "title": "Ciclo de refactorización de prototipos PMV (Materiales, Transformadores, Liquidaciones) - (Semana 2)",
+      "resp": "Profesional P1 Innovación/Practicante Universitario DevOps",
+      "sprint": "Sprint 5 (May 2026)"
+    },
+    {
+      "id": 1775489628975,
+      "status": "todo",
+      "cat": "Herramientas",
+      "title": "Ciclo de refactorización de prototipos PMV (Materiales, Transformadores, Liquidaciones) - (Semana 3)",
+      "resp": "Profesional P1 Innovación/Practicante Universitario DevOps",
+      "sprint": "Sprint 5 (May 2026)"
+    },
+    {
+      "id": 1775489628976,
+      "status": "todo",
+      "cat": "Herramientas",
+      "title": "Ciclo de refactorización de prototipos PMV (Materiales, Transformadores, Liquidaciones) - (Semana 4)",
+      "resp": "Profesional P1 Innovación/Practicante Universitario DevOps",
+      "sprint": "Sprint 5 (May 2026)"
+    },
+    {
+      "id": 1775489628977,
+      "status": "todo",
+      "cat": "Comunicación",
+      "title": "Postulación SafeGRID a los premios CIER de Innovación 2026",
+      "resp": "Profesional P1 Innovación",
+      "sprint": "Sprint 5 (May 2026)"
+    },
+    {
+      "id": 1775489628978,
+      "status": "todo",
+      "cat": "Comunicación",
+      "title": "Boletines internos sobre avances CRPE (Junio de 2026)",
+      "resp": "Profesional P1 Innovación",
+      "sprint": "Sprint 6 (Jun 2026)"
+    },
+    {
+      "id": 1775489628979,
+      "status": "todo",
+      "cat": "Estudios",
+      "title": "Análisis estado CRPE en Colombia - investigación apalancada en motores de Perplexity AI Pro",
+      "resp": "Profesional P1 Innovación",
+      "sprint": "Sprint 6 (Jun 2026)"
+    },
+    {
+      "id": 1775489628980,
+      "status": "todo",
+      "cat": "Vigilancia",
+      "title": "Vigilancia tecnológica - CRPE (Mes 5)",
+      "resp": "Profesional P1 Innovación",
+      "sprint": "Sprint 6 (Jun 2026)"
+    },
+    {
+      "id": 1775489628981,
+      "status": "todo",
+      "cat": "Gestión Ágil",
+      "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 1)",
+      "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
+      "sprint": "Sprint 6 (Jun 2026)"
+    },
+    {
+      "id": 1775489628982,
+      "status": "todo",
+      "cat": "Gestión Ágil",
+      "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 2)",
+      "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
+      "sprint": "Sprint 6 (Jun 2026)"
+    },
+    {
+      "id": 1775489628983,
+      "status": "todo",
+      "cat": "Gestión Ágil",
+      "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 3)",
+      "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
+      "sprint": "Sprint 6 (Jun 2026)"
+    },
+    {
+      "id": 1775489628984,
+      "status": "todo",
+      "cat": "Gestión Ágil",
+      "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 4)",
+      "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
+      "sprint": "Sprint 6 (Jun 2026)"
+    },
+    {
+      "id": 1775489628985,
+      "status": "todo",
+      "cat": "Herramientas",
+      "title": "Ciclo de refactorización de prototipos PMV (Materiales, Transformadores, Liquidaciones) - (Semana 1)",
+      "resp": "Profesional P1 Innovación/Practicante Universitario DevOps",
+      "sprint": "Sprint 6 (Jun 2026)"
+    },
+    {
+      "id": 1775489628986,
+      "status": "todo",
+      "cat": "Herramientas",
+      "title": "Ciclo de refactorización de prototipos PMV (Materiales, Transformadores, Liquidaciones) - (Semana 2)",
+      "resp": "Profesional P1 Innovación/Practicante Universitario DevOps",
+      "sprint": "Sprint 6 (Jun 2026)"
+    },
+    {
+      "id": 1775489628987,
+      "status": "todo",
+      "cat": "Herramientas",
+      "title": "Ciclo de refactorización de prototipos PMV (Materiales, Transformadores, Liquidaciones) - (Semana 3)",
+      "resp": "Profesional P1 Innovación/Practicante Universitario DevOps",
+      "sprint": "Sprint 6 (Jun 2026)"
+    },
+    {
+      "id": 1775489628988,
+      "status": "todo",
+      "cat": "Herramientas",
+      "title": "Ciclo de refactorización de prototipos PMV (Materiales, Transformadores, Liquidaciones) - (Semana 4)",
+      "resp": "Profesional P1 Innovación/Practicante Universitario DevOps",
+      "sprint": "Sprint 6 (Jun 2026)"
     }
   ],
   "sprints": [
-    "Sprint 1 (Ene)",
-    "Sprint 2 (Feb)",
-    "Sprint 3 (Mar)",
-    "Sprint 4 (Abr)",
-    "Sprint 5 (May)",
-    "Sprint 6 (Jun)",
-    "Sprint 7 (Jul)",
-    "Sprint 8 (Ago)",
-    "Sprint 9 (Sept)",
-    "Sprint 10 (Oct)",
-    "Sprint 11 (Nov)",
-    "Sprint 12 (Dic)"
+    "Sprint 1 (Ene 2026)",
+    "Sprint 2 (Feb 2026)",
+    "Sprint 3 (Mar 2026)",
+    "Sprint 4 (Abr 2026)",
+    "Sprint 5 (May 2026)",
+    "Sprint 6 (Jun 2026)",
+    "Sprint 7 (Jul 2026)",
+    "Sprint 8 (Ago 2026)",
+    "Sprint 9 (Sept 2026)",
+    "Sprint 10 (Oct 2026)",
+    "Sprint 11 (Nov 2026)",
+    "Sprint 12 (Dic 2026)"
   ],
   "cats": [
     "Alineación",
