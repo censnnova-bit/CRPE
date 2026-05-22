@@ -514,11 +514,11 @@
     },
     {
       "id": 1775489628965,
-      "status": "doing",
+      "status": "todo",
       "cat": "Alineación",
       "title": "Sesión con líder control pérdidas - revisión avances desde CENSNNOVA y alineación de expectativas",
       "resp": "Profesional P1 Innovación",
-      "sprint": "Sprint 5 (May 2026)"
+      "sprint": "Sprint 6 (Jun 2026)"
     },
     {
       "id": 1775489628966,
@@ -530,7 +530,7 @@
     },
     {
       "id": 1775489628967,
-      "status": "doing",
+      "status": "done",
       "cat": "Estudios",
       "title": "Análisis estado CRPE en Colombia - investigación apalancada en motores de Perplexity AI Pro",
       "resp": "Profesional P1 Innovación",
