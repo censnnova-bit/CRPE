@@ -666,7 +666,7 @@
     },
     {
       "id": 1775489628984,
-      "status": "doing",
+      "status": "done",
       "cat": "Gestión Ágil",
       "title": "Ceremonia de seguimiento de proyectos SafeGRID (Semana 4)",
       "resp": "Profesional P1 Innovación/ Profesional P1 Innovación Técnico",
@@ -698,7 +698,7 @@
     },
     {
       "id": 1775489628988,
-      "status": "doing",
+      "status": "done",
       "cat": "Herramientas",
       "title": "Ciclo de refactorización de prototipos PMV (Materiales, Transformadores, Liquidaciones) - (Semana 4)",
       "resp": "Profesional P1 Innovación/Practicante Universitario DevOps",
